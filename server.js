@@ -56,3 +56,5 @@ app.post('/api/track-click', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server's live`);
 });
+
+module.exports = app;
