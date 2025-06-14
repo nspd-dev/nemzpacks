@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const ANALYTICS_ENDPOINT_URL = 'https://nemzpacks.vercel.app/';
+    const ANALYTICS_ENDPOINT_URL = 'https://nemzpacks.vercel.app/api/track-click'; 
 
     function sendScenepackClickToBackend(packName) {
         console.log(`[Frontend] Sending click for "${packName}" to the backend.`);
