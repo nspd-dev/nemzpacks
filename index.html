@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NemzPacks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="main-content-wrapper">
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">Search for Scenepacks</h2>
+
+        <div class="search-input-group">
+            <input type="text" id="searchInput" placeholder="Type your search here..." />
+            <button id="searchButton">Search</button>
+        </div>
+
+        <p class="text-gray-400 mt-6 text-sm">
+            If you are running into any problems, go here: <br>
+            <a href="https://discord.gg/KkwAXHzKbb" target="_blank" class="underline">
+                discord.gg/KkwAXHzKbb
+            </a>
+        </p>
+
+        <div id="resultsSection" class="scenepack-results-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 hidden"></div>
+        <p id="noResultsMessage" class="text-center text-gray-400 mt-8 hidden">No NemzPacks found matching your search.</p>
+    </div>
+
+    <script src="analytics.js"></script> <script src="script.js"></script>    </body>
+</html>
