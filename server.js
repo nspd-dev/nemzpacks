@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(cors({ origin: 'https://nemzpacks.vercel.app/' }));
+app.use(cors({ origin: 'https://nemzpacks.vercel.app/api/track-click' }));
 const disc = process.env.disc;
 
 if (!disc) {
