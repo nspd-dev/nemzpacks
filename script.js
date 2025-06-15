@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Batman Arkham City", type: "game", genre: "Action-Adventure", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/0cYA3ZaI" },
         { name: "Batman Arkham Asylum", type: "game", genre: "Action-Adventure", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/cdQ2DJCJ" },
         { name: "Arkham Series Trailers", type: "game", genre: "Trailer", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/QAIC2Bpb" },
-
         { name: "Captain America: The First Avenger", type: "movie", genre: "Action", url: "https://mega.nz/folder/BNpXXDyY#EWIXd80RjXlcAuoQhOKz2g" },
         { name: "Captain Marvel", type: "movie", genre: "Action", url: "https://mega.nz/folder/ZQhXAb6A#PznAW_PrWzRCkCfcJKODmQ" },
         { name: "Iron Man (2008)", type: "movie", genre: "Action", url: "https://mega.nz/folder/YdBn2BTC#o9Bsf3Llx3WnAcxz1OGirg" },
@@ -42,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Deadpool & Wolverine", type: "movie", genre: "Action", url: "https://mega.nz/folder/wN413KhK#s3t7tJ5EQnfnWdSk49qtaA" },
         { name: "Captain America: Brave New World", type: "movie", genre: "Action", url: "https://mega.nz/folder/wPxRlYSI#Zxdk_GbMzgk8Y-B10fYwLw" },
         { name: "Thunderbolts*", type: "movie", genre: "Action", url: "https://drive.google.com/file/d/1rrMvIdCg9cB8ufvTwHXF2FHMqmEWHrYA/view?usp=drive_link" },
-
         { name: "Spider-Man (2002)", type: "movie", genre: "Action", url: "https://mega.nz/folder/8JxwFCAC#ZxJCwyuSpdd4BeSo79on_A" },
         { name: "Spider-Man 2 (2004)", type: "movie", genre: "Action", url: "https://mega.nz/folder/8EQ0mYxA#0ZI1vYY8vAzuz3kfFjEinA" },
         { name: "Spider-Man 3 (2007)", type: "movie", genre: "Action", url: "https://mega.nz/folder/MARB0Rba#rmyqxb8zWbSfLjgq3w_rGw" },
@@ -50,13 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "The Amazing Spider-Man 2 (2014)", type: "movie", genre: "Action", url: "https://mega.nz/folder/5U42QaRS#6huIP2gQwZz_pY1rrw-gqg" },
         { name: "Spider-Man: Into the Spider-Verse", type: "movie", genre: "Animation", url: "https://mega.nz/folder/wAIxXQoQ#BrZt2JY-GSh9HiJ_EITN4w" },
         { name: "Spider-Man: Across the Spider-Verse", type: "movie", genre: "Animation", url: "https://mega.nz/folder/dF4gRazZ#9fMqyfm4RgTKAI1_BaS0iw" },
-
         { name: "Star Wars: Episode V - The Empire Strikes Back", type: "movie", genre: "Sci-Fi", url: "https://mega.nz/folder/9H5UWL4b#T1AWF3U-J3l69KjtkAeTHg" },
         { name: "Star Wars: Episode IV – A New Hope", type: "movie", genre: "Sci-Fi", url: "https://mega.nz/folder/oaJhhR6Y#2QgkmQn4r5aBlrkheCLYZQ" },
         { name: "Star Wars: Episode III – Revenge of the Sith", type: "movie", genre: "Sci-Fi", url: "https://mega.nz/folder/5aAwgbhJ#CYZHhOScROgvgWH8mieDlg" },
         { name: "Star Wars: Episode II - Attack of the Clones", type: "movie", genre: "Sci-Fi", url: "https://mega.nz/folder/JShUkJYC#3tNh4NGbIq7BGsVaOMnNXw" },
         { name: "Star Wars: Episode I – The Phantom Menace", type: "movie", genre: "Sci-Fi", url: "https://mega.nz/folder/MaJhESzA#_tGcgI8QrqW33g1AKToF4w" },
-
         { name: "FNAF (Springtrap)", type: "movie", genre: "Horror", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/UIZ0BbjK" },
         { name: "Ghost Of Tsushima", type: "game", genre: "Action-Adventure", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/pYBESD7D" },
         { name: "God of War (2018)", type: "game", genre: "Action-Adventure", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/tFYyhTwC" },
