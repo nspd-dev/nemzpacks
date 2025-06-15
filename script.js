@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Star Wars: Episode III – Revenge of the Sith", type: "movie", genre: "Sci-Fi", url: "https://mega.nz/folder/5aAwgbhJ#CYZHhOScROgvgWH8mieDlg" },
         { name: "Star Wars: Episode II - Attack of the Clones", type: "movie", genre: "Sci-Fi", url: "https://mega.nz/folder/JShUkJYC#3tNh4NGbIq7BGsVaOMnNXw" },
         { name: "Star Wars: Episode I – The Phantom Menace", type: "movie", genre: "Sci-Fi", url: "https://mega.nz/folder/MaJhESzA#_tGcgI8QrqW33g1AKToF4w" },
-        { name: "FNAF (Springtrap)", type: "movie", genre: "Horror", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/UIZ0BbjK" },
+        { name: "FNAF (Springtrap)", type: "game", genre: "Horror", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/UIZ0BbjK" },
         { name: "Ghost Of Tsushima", type: "game", genre: "Action-Adventure", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/pYBESD7D" },
         { name: "God of War (2018)", type: "game", genre: "Action-Adventure", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/tFYyhTwC" },
         { name: "God of War Ragnarök", type: "game", genre: "Action-Adventure", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/IdRGhZLL" },
