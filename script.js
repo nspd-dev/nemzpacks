@@ -138,7 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const scenepackResultsContainer = document.getElementById('mainScenepackResults');
         const noResultsMessage = document.getElementById('noResultsMessage');
 
-        resultsSection.classList.remove('show-results');
+        if (searchInput.value === '') {
+            resultsSection.classList.remove('show-results');
+            noResultsMessage.classList.add('hidden');
+            scenepackResultsContainer.innerHTML = '';
+        }
 
         searchButton.addEventListener('click', performMainSearch);
         searchInput.addEventListener('input', performMainSearch);
@@ -198,26 +202,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    const currentPage = window.location.pathname.split('/').pop();
+    const currentPathname = window.location.pathname;
+    let pageIdentifier;
 
-    if (currentPage === 'index.html' || currentPage === '') {
+    if (currentPathname === '/' || currentPathname === '/index.html') {
+        pageIdentifier = 'index';
+    } else {
+        const segments = currentPathname.split('/').filter(s => s !== '');
+        pageIdentifier = segments[0];
+    }
+
+    if (pageIdentifier === 'index') {
         setupMainSearch();
-    } else if (currentPage === 'movies.html') {
+    } else if (pageIdentifier === 'movies') {
         setupCategoryPage('movie', 'movieSearchInput', 'movieGenreFilter', 'movieScenepackResults', 'noMovieResultsMessage', 'movieResultsSection');
-    } else if (currentPage === 'games.html') {
+    } else if (pageIdentifier === 'games') {
         setupCategoryPage('game', 'gameSearchInput', 'gameGenreFilter', 'gameScenepackResults', 'noGameResultsMessage', 'gameResultsSection');
-    } else if (currentPage === 'tvshows.html') {
+    } else if (pageIdentifier === 'tvshows') {
         setupCategoryPage('tvshow', 'tvshowSearchInput', 'tvshowGenreFilter', 'tvshowScenepackResults', 'noTvShowResultsMessage', 'tvshowResultsSection');
     }
 
-    const navLinks = document.querySelectorAll('.nav-links a');
-    navLinks.forEach(link => {
-        const linkHrefFileName = link.href.split('/').pop();
-        const currentFileName = currentPage;
 
-        if (linkHrefFileName === currentFileName) {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const currentNormalizedPath = window.location.pathname.endsWith('/')
+        ? window.location.pathname
+        : window.location.pathname + '/';
+
+    navLinks.forEach(link => {
+        const linkPathname = new URL(link.href, window.location.origin).pathname;
+        const normalizedLinkPath = linkPathname.endsWith('/')
+            ? linkPathname
+            : linkPathname + '/';
+
+        if (linkPathname === '/' && currentNormalizedPath === '/') {
             link.classList.add('active-nav-link');
-        } else if (currentFileName === '' && linkHrefFileName === 'index.html') {
+        } else if (linkPathname === currentNormalizedPath) {
             link.classList.add('active-nav-link');
         } else {
             link.classList.remove('active-nav-link');

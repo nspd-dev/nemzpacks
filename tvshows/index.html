@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>NZPacks</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>NZPacks - TV Shows</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -25,11 +25,13 @@
     </nav>
 
     <div class="main-content-wrapper">
-        <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">Search for Scenepacks</h2>
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">Explore TV Shows</h2>
 
-        <div class="search-input-group">
-            <input type="text" id="searchInput" placeholder="Type your search here..." autocomplete="off" />
-            <button id="searchButton">Search</button>
+        <div class="filter-controls-group">
+            <input type="text" id="tvshowSearchInput" placeholder="Search TV shows..." autocomplete="off" class="search-filter-input" />
+            <select id="tvshowGenreFilter" class="genre-filter-select">
+                <option value="">All Genres</option>
+                </select>
         </div>
 
         <p class="text-gray-400 mt-6 text-sm">
@@ -39,13 +41,13 @@
             </a>
         </p>
 
-        <section id="resultsSection" class="results-section">
-            <div id="mainScenepackResults" class="scenepack-results-container">
+        <section id="tvshowResultsSection" class="results-section show-results">
+            <div id="tvshowScenepackResults" class="scenepack-results-container">
                 </div>
-            <p id="noResultsMessage" class="text-center text-gray-400 mt-8 hidden">No Scenepacks found matching your search.</p>
+            <p id="noTvShowResultsMessage" class="text-center text-gray-400 mt-8 hidden">No TV shows found.</p>
         </section>
 
-    <script src="analytics.js"></script>
-    <script src="script.js"></script>
+    <script src="/analytics.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
