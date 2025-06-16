@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Mortal Kombat 1", type: "game", genre: "Fighting", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/JMQxwD7S" },
         { name: "Mortal Kombat 11 (Intro scenes)", type: "game", genre: "Fighting", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/RMJmSRKK" },
         { name: "Mortal Kombat X", type: "game", genre: "Fighting", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/FJASzDQR" },
-        { name: "Overwatch 2", type: "game", genre: "FPS", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/gZYmRZZC" },
+        { name: "Overwatch 2 (All)", type: "game", genre: "FPS", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/gZYmRZZC" },
         { name: "Overwatch 2 (DPS)", type: "game", genre: "FPS", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/tNYiQLBD" },
         { name: "Overwatch 2 (Support)", type: "game", genre: "FPS", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/BBRiQDZS" },
         { name: "Overwatch 2 (Tank)", type: "game", genre: "FPS", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/BZZECLRL" },
