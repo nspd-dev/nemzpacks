@@ -208,10 +208,12 @@ p.text-gray-400 a:hover {
     margin: 0;
     display: flex;
     gap: var(--nav-gap);
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Forces items onto a single line */
     justify-content: center;
     max-width: 1200px;
     width: 100%;
+    /* Removed overflow-x: auto; to remove the horizontal scrollbar */
+    -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
 }
 
 .nav-link {
@@ -225,6 +227,8 @@ p.text-gray-400 a:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-shrink: 0; /* Prevents links from shrinking too much */
+    white-space: nowrap; /* Prevents text inside links from wrapping */
 }
 
 .nav-link:hover {
@@ -254,13 +258,13 @@ p.text-gray-400 a:hover {
 
 @media (max-width: 480px) {
     .nav-link {
-        font-size: 0.9rem;
-        padding: 0.3rem 0.6rem;
+        font-size: 0.85rem; /* Slightly reduced font size for very small screens */
+        padding: 0.3rem 0.5rem; /* Adjusted padding for very small screens */
     }
     .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.4rem;
+        /* The flex-direction: column was removed in a previous update to ensure single line navigation. */
+        align-items: center; /* This centers them horizontally within the scrollable area */
+        gap: 0.3rem; /* Reduced gap between items for very small screens */
     }
     .navbar {
         padding: 0.7rem;
