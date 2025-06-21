@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Mortal Kombat 1", type: "game", genre: "Fighting", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/JMQxwD7S" },
         { name: "Mortal Kombat 11 (Intro scenes)", type: "game", genre: "Fighting", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/RMJmSRKK" },
         { name: "Mortal Kombat X", type: "game", genre: "Fighting", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/FJASzDQR" },
-        { name: "Overwatch 2 (All)", type: "game", genre: "FPS", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/gZYmRZZC" },
+        { name: "Overwatch 2 (all)", type: "game", genre: "FPS", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/gZYmRZZC" },
         { name: "Overwatch 2 (DPS)", type: "game", genre: "FPS", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/tNYiQLBD" },
         { name: "Overwatch 2 (Support)", type: "game", genre: "FPS", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/BBRiQDZS" },
         { name: "Overwatch 2 (Tank)", type: "game", genre: "FPS", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/BZZECLRL" },
@@ -80,6 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Rise Of The Tomb Raider", type: "game", genre: "Action-Adventure", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/5AYW0JjR" },
         { name: "Shadow Of The Tomb Raider", type: "game", genre: "Action-Adventure", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/YERgSbLT" },
         { name: "Valorant (Reyna Only)", type: "game", genre: "FPS", url: "https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/ERYQCbbC" },
+        { name: "Beastars - Tem", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/xolrvgf6oapk" },
+        { name: "Beastars - Seven", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/i4evwrq0e4s5" },
+        { name: "Beastars - Melon", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/b7ttsn75chut" },
+        { name: "Beastars - Louis", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/v52ltba8b48y" },
+        { name: "Beastars - Legoshi", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/7ayyzl0vo5qy" },
+        { name: "Beastars - Juno", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/di8i61g1y8yx" },
+        { name: "Beastars - Haru", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/5c1gzo1pxec1" },
+        { name: "Beastars - Dom", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/dvxgwaxjz1z8" },
     ];
 
     function normalizeString(str) {
@@ -220,6 +228,8 @@ document.addEventListener('DOMContentLoaded', () => {
         setupCategoryPage('game', 'gameSearchInput', 'gameGenreFilter', 'gameScenepackResults', 'noGameResultsMessage', 'gameResultsSection');
     } else if (pageIdentifier === 'tvshows') {
         setupCategoryPage('tvshow', 'tvshowSearchInput', 'tvshowGenreFilter', 'tvshowScenepackResults', 'noTvShowResultsMessage', 'tvshowResultsSection');
+    } else if (pageIdentifier === 'anime') {
+        setupCategoryPage('anime', 'animeSearchInput', 'animeGenreFilter', 'animeScenepackResults', 'noAnimeResultsMessage', 'animeResultsSection');
     }
 
 

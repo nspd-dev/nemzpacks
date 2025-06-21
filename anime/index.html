@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>NZPacks - TV Shows</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>NZPacks - Anime</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1LH8MW8YV"></script>
@@ -22,30 +22,30 @@
 <body>
 
     <div class="top-right-icon">
-        <a href="/">
-            <img src="/512x512.png" alt="Icon" class="custom-icon">
+        <a href="../">
+            <img src="../512x512.png" alt="Icon" class="custom-icon">
         </a>
     </div>
 
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="/" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="/games/" class="nav-link active-nav-link"><i class="fa-solid fa-gamepad"></i> Games</a></li>
-            <li><a href="/movies/" class="nav-link"><i class="fa-solid fa-film"></i> Movies</a></li>
-            <li><a href="/tvshows/" class="nav-link"><i class="fa-solid fa-tv"></i> TV Show</a></li>
+            <li><a href="../" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="../games/" class="nav-link"><i class="fa-solid fa-gamepad"></i> Games</a></li>
+            <li><a href="../movies/" class="nav-link"><i class="fa-solid fa-film"></i> Movies</a></li>
+            <li><a href="../tvshows/" class="nav-link"><i class="fa-solid fa-tv"></i> TV Show</a></li>
             <li><a href="/anime/" class="nav-link"><i class="fa-solid fa-star"></i> Anime</a></li>
-            <li><a href="/howtodownload/" class="nav-link"><i class="fa-solid fa-circle-question"></i> How to Download</a></li>
+            <li><a href="../howtodownload/" class="nav-link"><i class="fa-solid fa-circle-question"></i> How to Download</a></li>
             <li><a href="https://discord.gg/KkwAXHzKbb" target="_blank" class="nav-link"><i class="fa-solid fa-link-slash"></i> Report Dead Link</a></li>
-            <li><a href="/other/" class="nav-link"><i class="fa-solid fa-ellipsis"></i> Other</a></li>
+            <li><a href="../other/" class="nav-link"><i class="fa-solid fa-ellipsis"></i> Other</a></li>
         </ul>
     </nav>
 
     <div class="main-content-wrapper">
-        <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">Explore TV Shows</h2>
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">Explore Anime</h2>
 
         <div class="filter-controls-group">
-            <input type="text" id="tvshowSearchInput" placeholder="Search TV shows..." autocomplete="off" class="search-filter-input" />
-            <select id="tvshowGenreFilter" class="genre-filter-select">
+            <input type="text" id="animeSearchInput" placeholder="Search anime..." autocomplete="off" class="search-filter-input" />
+            <select id="animeGenreFilter" class="genre-filter-select">
                 <option value="">All Genres</option>
                 </select>
         </div>
@@ -57,10 +57,10 @@
             </a>
         </p>
 
-        <section id="tvshowResultsSection" class="results-section show-results">
-            <div id="tvshowScenepackResults" class="scenepack-results-container">
+        <section id="animeResultsSection" class="results-section show-results">
+            <div id="animeScenepackResults" class="scenepack-results-container">
                 </div>
-            <p id="noTvShowResultsMessage" class="text-center text-gray-400 mt-8 hidden">No TV shows found matching your criteria.</p>
+            <p id="noAnimeResultsMessage" class="text-center text-gray-400 mt-8 hidden">No anime found matching your criteria.</p>
         </section>
 
         <p class="text-white text-sm mt-8 w-full">
@@ -68,7 +68,7 @@
         </p>
     </div>
 
-    <script src="/analytics.js"></script>
-    <script src="/script.js"></script>
+    <script src="../analytics.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
