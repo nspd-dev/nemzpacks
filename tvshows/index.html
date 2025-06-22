@@ -43,31 +43,28 @@
     <div class="main-content-wrapper">
         <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">Explore TV Shows</h2>
 
-        <div class="filter-controls-group">
-            <input type="text" id="tvshowSearchInput" placeholder="Search TV shows..." autocomplete="off" class="search-filter-input" />
-            <select id="tvshowGenreFilter" class="genre-filter-select">
+        <div class="category-search-input-group">
+            <div class="search-input-wrapper" style="position:relative; flex:1;">
+                <input type="text" id="animeSearchInput" placeholder="Search anime..." autocomplete="off" style="width:100%;" />
+            </div>
+            <select id="animeGenreFilter" class="genre-filter-select">
                 <option value="">All Genres</option>
-                </select>
+            </select>
         </div>
 
         <p class="text-gray-400 mt-6 text-sm">
-            If you are running into any problems, go here: <br>
+            running into any problems? join our discord server <br>
             <a href="https://discord.gg/KkwAXHzKbb" target="_blank" class="underline">
                 discord.gg/KkwAXHzKbb
             </a>
-        </p>
+         </p>
 
         <section id="tvshowResultsSection" class="results-section show-results">
             <div id="tvshowScenepackResults" class="scenepack-results-container">
                 </div>
             <p id="noTvShowResultsMessage" class="text-center text-gray-400 mt-8 hidden">No TV shows found matching your criteria.</p>
         </section>
-
-        <p class="text-white text-sm mt-8 w-full">
-            &copy; 2025 NZPacks. All rights reserved.
-        </p>
-    </div>
-
+        
     <script src="/analytics.js"></script>
     <script src="/script.js"></script>
 </body>

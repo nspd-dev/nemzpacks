@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>All Scenepacks | NZPacks</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: #232347;
+            margin: 0;
+            font-family: 'Inter', Arial, sans-serif;
+        }
+        .scenepacks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            padding: 3rem 2vw 2rem 2vw;
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+        .scenepack-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.15s, box-shadow 0.15s;
+            cursor: pointer;
+            position: relative;
+            text-decoration: none;
+        }
+        .scenepack-card:hover {
+            transform: translateY(-6px) scale(1.04);
+            box-shadow: 0 0 32px 0 #fff, 0 0 0 2px #fff;
+            z-index: 2;
+        }
+        .scenepack-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            background: #222;
+            display: block;
+        }
+        .scenepack-card .card-title {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 1rem 0 0.5rem 0;
+            text-align: center;
+            padding: 0 0.5rem;
+            word-break: break-word;
+        }
+        .scenepack-card .card-meta {
+            color: #b3b3d1;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .animated-search {
+            padding: 0.7rem 1.2rem;
+            border-radius: 2rem;
+            border: 1.5px solid #444;
+            background: #18182e;
+            color: #fff;
+            font-size: 1.08rem;
+            outline: none;
+            min-width: 220px;
+            transition: width 0.4s ease;
+        }
+        .animated-search:focus {
+            width: 250px;
+        }
+        .sort-dropdown-container {
+            position: relative;
+        }
+        .sort-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.2rem;
+            border-radius: 2rem;
+            border: 1.5px solid #444;
+            background: #18182e;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            outline: none;
+            transition: background 0.3s;
+        }
+        .sort-button:hover {
+            background: #2a2a3d;
+        }
+        .sort-caret {
+            transition: transform 0.3s;
+        }
+        .sort-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #18182e;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+        .sort-option {
+            padding: 0.7rem 1.2rem;
+            color: #fff;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .sort-option:hover {
+            background: #2a2a3d;
+        }
+        @media (max-width: 600px) {
+            .scenepacks-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 1rem;
+                padding: 1rem;
+            }
+            .scenepack-card img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/games/" class="nav-link"><i class="fa-solid fa-gamepad"></i> Games</a></li>
+            <li><a href="/movies/" class="nav-link"><i class="fa-solid fa-film"></i> Movies</a></li>
+            <li><a href="/tvshows/" class="nav-link"><i class="fa-solid fa-tv"></i> TV Show</a></li>
+            <li><a href="/anime/" class="nav-link"><i class="fa-solid fa-star"></i> Anime</a></li>
+            <li><a href="/howtodownload/" class="nav-link"><i class="fa-solid fa-circle-question"></i> How to Download</a></li>
+            <li><a href="https://discord.gg/KkwAXHzKbb" target="_blank" class="nav-link"><i class="fa-solid fa-link-slash"></i> Report Dead Link</a></li>
+            <li><a href="/other/" class="nav-link"><i class="fa-solid fa-ellipsis"></i> Other</a></li>
+        </ul>
+    </nav>
+    <h1 style="color:#fff; text-align:center; margin-top:2rem; font-size:2.5rem; font-weight:800;">All Scenepacks</h1>
+    <div style="display:flex;justify-content:center;align-items:center;margin-bottom:1.5rem;gap:0.7rem;">
+        <input 
+            id="searchInput"
+            type="text"
+            placeholder="Search scenepacks..."
+            class="animated-search"
+            autocomplete="off"
+        />
+        <select id="sortBySelect" class="genre-filter-select">
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+            <option value="type">Type</option>
+            <option value="genre">Genre</option>
+        </select>
+    </div>
+    <div class="scenepacks-grid" id="allScenepacksGrid"></div>
+    <script src="/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let packs = window.scenepacks || [];
+            if (!packs.length) return;
+
+            const grid = document.getElementById('allScenepacksGrid');
+            const sortBySelect = document.getElementById('sortBySelect');
+            const searchInput = document.getElementById('searchInput');
+
+            function getImage(pack) {
+                if (pack.imageUrl) return pack.imageUrl;
+                return null;
+            }
+
+            function renderGrid(sortedPacks) {
+                grid.innerHTML = '';
+                sortedPacks.forEach((pack, i) => {
+                    const imageUrl = getImage(pack);
+                    if (!imageUrl) return;
+
+                    const card = document.createElement('a');
+                    card.className = 'scenepack-card scenepack-fadein';
+                    card.href = pack.url;
+                    card.target = "_blank";
+                    card.rel = "noopener noreferrer";
+
+                    const img = document.createElement('img');
+                    img.src = imageUrl;
+                    img.alt = pack.name;
+
+                    const title = document.createElement('div');
+                    title.className = 'card-title';
+                    title.textContent = pack.name;
+
+                    const meta = document.createElement('div');
+                    meta.className = 'card-meta';
+                    meta.textContent = [pack.type, pack.genre].filter(Boolean).join(' • ');
+
+                    card.appendChild(img);
+                    card.appendChild(title);
+                    card.appendChild(meta);
+
+                    // Add staggered animation delay
+                    card.style.animationDelay = (i * 60) + 'ms';
+
+                    grid.appendChild(card);
+                });
+            }
+
+            function sortPacks(packs, sortBy) {
+                let sorted = [...packs];
+                if (sortBy === 'name-asc') {
+                    sorted.sort((a, b) => a.name.localeCompare(b.name));
+                } else if (sortBy === 'name-desc') {
+                    sorted.sort((a, b) => b.name.localeCompare(a.name));
+                } else if (sortBy === 'type') {
+                    sorted.sort((a, b) => (a.type || '').localeCompare(b.type || '') || a.name.localeCompare(b.name));
+                } else if (sortBy === 'genre') {
+                    sorted.sort((a, b) => (a.genre || '').localeCompare(b.genre || '') || a.name.localeCompare(b.name));
+                }
+                return sorted;
+            }
+
+            function normalize(str) {
+                return (str || "")
+                    .toLowerCase()
+                    .replace(/[\s\-_.]+/g, '')
+                    .replace(/[^a-z0-9]/g, '');
+            }
+
+            function filterPacks(packs, query) {
+                if (!query) return packs;
+                const normQuery = normalize(query);
+                return packs.filter(pack => {
+                    if (normalize(pack.name).includes(normQuery)) return true;
+                    if (pack.type && normalize(pack.type).includes(normQuery)) return true;
+                    if (pack.genre && normalize(pack.genre).includes(normQuery)) return true;
+                    return false;
+                });
+            }
+
+            function render(initialSort) {
+                const query = searchInput.value;
+                const sortBy = initialSort || 'name-asc';
+                const filtered = filterPacks(packs, query);
+                renderGrid(sortPacks(filtered, sortBy));
+            }
+
+            render();
+
+            searchInput.addEventListener('input', render);
+
+            sortBySelect.addEventListener('change', (e) => {
+                const value = e.target.value;
+                render(value);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -11,14 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1LH8MW8YV"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-G1LH8MW8YV');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-G1LH8MW8YV');
     </script>
 </head>
-<body>
+<body class="homepage-layout">
 
     <div class="top-right-icon">
         <a href="/">
@@ -28,8 +27,8 @@
 
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="/" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="/games/" class="nav-link active-nav-link"><i class="fa-solid fa-gamepad"></i> Games</a></li>
+            <li><a href="/" class="nav-link active-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/games/" class="nav-link"><i class="fa-solid fa-gamepad"></i> Games</a></li>
             <li><a href="/movies/" class="nav-link"><i class="fa-solid fa-film"></i> Movies</a></li>
             <li><a href="/tvshows/" class="nav-link"><i class="fa-solid fa-tv"></i> TV Show</a></li>
             <li><a href="/anime/" class="nav-link"><i class="fa-solid fa-star"></i> Anime</a></li>
@@ -39,30 +38,75 @@
         </ul>
     </nav>
 
-    <div class="main-content-wrapper">
-        <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">Search for Scenepacks</h2>
-
-        <div class="search-input-group">
-            <input type="text" id="searchInput" placeholder="Type your search here..." autocomplete="off" />
-            <button id="searchButton">Search</button>
+    <div class="main-layout-container">
+        <div class="section featured-scenepacks">
+            <h3 class="section-title">FEATURED</h3>
+            <div id="featuredScenepacksContainer" class="scenepack-grid">
+                <div class="homepage-sidebar-card">
+                    <a href="https://rentry.co/BeastarsNZ" target="_blank" rel="noopener">
+                        <img src="beastars.jpg" alt="Featured Image 1" class="card-image">
+                    </a>
+                </div>
+                <div class="homepage-sidebar-card">
+                    <a href="https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/4IBWSDDB" target="_blank" rel="noopener">
+                        <img src="ssktjl.jpg" alt="Featured Image 2" class="card-image">
+                    </a>
+                </div>
+                <div class="homepage-sidebar-card">
+                    <a href="https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/9YICzLLS" target="_blank" rel="noopener">
+                        <img src="spiderman2.jpg" alt="Featured Image 3" class="card-image">
+                    </a>
+                </div>
+                <div class="homepage-sidebar-card">
+                    <a href="https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/RBICiD4K" target="_blank" rel="noopener">
+                        <img src="tlou2.jpg"Featured Image 4" class="card-image">
+                    </a>
+                </div>
+                <div class="homepage-sidebar-card">
+                    <a href="https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/FJASzDQR" target="_blank" rel="noopener">
+                        <img src="mkx.jpg" alt="Featured Image 5" class="card-image">
+                    </a>
+                </div>
+                <div class="homepage-sidebar-card">
+                    <a href="https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/YERgSbLT" target="_blank" rel="noopener">
+                        <img src="Shadow Of The Tomb Raider.jpg" alt="Featured Image 6" class="card-image">
+                    </a>
+                </div>
+                <div class="homepage-sidebar-card">
+                    <a href="https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/gZYmRZZC" target="_blank" rel="noopener">
+                        <img src="ow2.jpg" alt="Featured Image 7" class="card-image">
+                    </a>
+                </div>
+                <div class="homepage-sidebar-card">
+                    <a href="https://mega.nz/folder/9RZUBIQB#SIExHB4wKQtZjYPhRtz39Q/folder/5AYW0JjR" target="_blank" rel="noopener">
+                        <img src="Rise Of The Tomb Raider.jpg" alt="Featured Image 8" class="card-image">
+                    </a>
+                </div>
+            </div>
+            <a class="show-more-button" href="/scenepacks/">SHOW MORE</a>
         </div>
 
-        <p class="text-gray-400 mt-6 text-sm">
-            If you are running into any problems, go here: <br>
-            <a href="https://discord.gg/KkwAXHzKbb" target="_blank" class="underline">
-                discord.gg/KkwAXHzKbb
-            </a>
-        </p>
+        <div class="flex-spacer"></div>
 
-        <section id="resultsSection" class="results-section">
-            <div id="mainScenepackResults" class="scenepack-results-container">
+        <div class="main-content-wrapper">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">Search For Scenepacks</h2>
+            <div class="search-input-group">
+                <input type="text" id="searchInput" placeholder="" autocomplete="off" />
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <section id="resultsSection" class="results-section">
+                <div id="mainScenepackResults" class="scenepack-results-container">
                 </div>
-            <p id="noResultsMessage" class="text-center text-gray-400 mt-8 hidden">No Scenepacks found matching your search.</p>
-        </section>
+                <p id="noResultsMessage" class="text-center text-gray-400 mt-8 hidden">No Scenepacks found matching your search.</p>
+            </section>
+        </div>
+        <div class="flex-spacer"></div>
+    </div>
 
-        <p class="text-white text-sm mt-8 w-full">
-            &copy; 2025 NZPacks. All rights reserved.
-        </p>
+    <div class="socials-bar">
+        <a href="https://www.tiktok.com/@nemz.aep" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/nemzpacks/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="https://discord.gg/KkwAXHzKbb" target="_blank" rel="noopener"><i class="fab fa-discord"></i></a>
     </div>
 
     <script src="/analytics.js"></script>
