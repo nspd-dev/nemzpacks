@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: "Beastars - Juno", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/di8i61g1y8yx" },
     { name: "Beastars - Haru", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/5c1gzo1pxec1" },
     { name: "Beastars - Dom", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/dvxgwaxjz1z8" },
+    { name: "Beastars - Riz", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/1non2e7uy6ly" },
     { name: "Toy Story 2 (1999) - Barbie", type: "movie", genre: "Animation", url: "https://mega.nz/folder/IQIyhJyQ#krd2ZL3FSZ7Nik_7l1Cvsg/file/lchVFbRL" },
     { name: "Toy Story 2 (1999) - Bo Peep", type: "movie", genre: "Animation", url: "https://mega.nz/folder/IQIyhJyQ#krd2ZL3FSZ7Nik_7l1Cvsg/file/1c5mnSAb" },
     { name: "Toy Story 2 (1999) - Bullseye", type: "movie", genre: "Animation", url: "https://mega.nz/folder/IQIyhJyQ#krd2ZL3FSZ7Nik_7l1Cvsg/file/ldhjDQhL" },
