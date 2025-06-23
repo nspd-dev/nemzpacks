@@ -466,7 +466,7 @@ function preloadImage(url, timeout = 7000) {
         let timedOut = false;
         const timer = setTimeout(() => {
             timedOut = true;
-            img.src = ""; // stop loading
+            img.src = "";
             reject(new Error("timeout"));
         }, timeout);
         img.onload = () => {
