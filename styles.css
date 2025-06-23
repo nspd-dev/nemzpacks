@@ -48,7 +48,7 @@ html::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("https://i.ibb.co/zWpQ5DNK/image2.jpg");
+    background-image: url("image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1523,6 +1523,7 @@ body:not(.homepage-layout) .scenepack-results-container {
     overflow-y: visible;
 }
 
+/* Animated search bar */
 .animated-search {
     padding: 0.7rem 1.2rem;
     border-radius: 2rem;
