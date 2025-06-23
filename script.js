@@ -203,7 +203,7 @@ window.scenepacks = [
     { name: "Extraction 2 (2023) - Zurab", type: "movie", genre: "Action", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/smtinTpB" },
     { name: "Godzilla (2014)", type: "movie", genre: "Thriller", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/x202CD4R", imageUrl: "https://static.posters.cz/image/1300/19234.jpg" },
     { name: "Godzilla (2014) - Elle", type: "movie", genre: "Thriller", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/x202CD4R" },
-    { name: "Godzilla (2014) - The Mutos", type: "movie", genre: "Thriller", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/Rjt0lT5Z" },
+    { name: "Godzilla (2014) - The Mutos", type: "movie", genre: "Thriller", url: "https://mega.nz/folder/Ejj1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/Rjt0lT5Z" },
     { name: "Godzilla (2014) - Godzilla", type: "movie", genre: "Thriller", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/Qq8W1LSI" },
     { name: "Godzilla (2014) - Joe Brody", type: "movie", genre: "Thriller", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/gj92HBZQ" },
     { name: "Godzilla (2014) - LT. Ford", type: "movie", genre: "Thriller", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/V3tSCDiQ" },
@@ -459,7 +459,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function updateFeaturedScenepacks(scenepacks, featuredCount = 8) {
+function preloadImage(url, timeout = 7000) {
+    return new Promise((resolve, reject) => {
+        if (!url) return reject();
+        const img = new Image();
+        let timedOut = false;
+        const timer = setTimeout(() => {
+            timedOut = true;
+            img.src = ""; // stop loading
+            reject(new Error("timeout"));
+        }, timeout);
+        img.onload = () => {
+            if (!timedOut) {
+                clearTimeout(timer);
+                resolve(url);
+            }
+        };
+        img.onerror = () => {
+            if (!timedOut) {
+                clearTimeout(timer);
+                reject(new Error("error"));
+            }
+        };
+        img.src = url;
+    });
+}
+
+async function updateFeaturedScenepacks(scenepacks, featuredCount = 8) {
     const container = document.getElementById('featuredScenepacksContainer');
     if (!container || !Array.isArray(scenepacks)) return;
 
@@ -479,7 +505,6 @@ function updateFeaturedScenepacks(scenepacks, featuredCount = 8) {
     let needsUpdate = true;
 
     if (data && Array.isArray(data.featured) && data.timestamp) {
-        // If less than 24 hours, use cached
         if (now - data.timestamp < 24 * 60 * 60 * 1000) {
             featured = data.featured;
             needsUpdate = false;
@@ -505,7 +530,19 @@ function updateFeaturedScenepacks(scenepacks, featuredCount = 8) {
     }
 
     container.innerHTML = '';
-    featured.forEach(pack => {
+    const promises = featured.map(async (pack) => {
+        let imgUrl = pack.imageUrl;
+        try {
+            await preloadImage(imgUrl, 7000);
+        } catch {
+            imgUrl = `https://placehold.co/300x400/000000/FFFFFF?text=No+Image`;
+        }
+        return { ...pack, imageUrl: imgUrl };
+    });
+
+    const loadedFeatured = await Promise.all(promises);
+
+    loadedFeatured.forEach(pack => {
         const card = document.createElement('div');
         card.className = 'homepage-sidebar-card';
 
@@ -518,6 +555,7 @@ function updateFeaturedScenepacks(scenepacks, featuredCount = 8) {
         img.src = pack.imageUrl;
         img.alt = pack.name || 'Featured Image';
         img.className = 'card-image';
+        img.loading = "lazy";
 
         link.appendChild(img);
         card.appendChild(link);
