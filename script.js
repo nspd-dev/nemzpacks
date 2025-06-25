@@ -89,7 +89,6 @@ window.scenepacks = [
     { name: "Beastars - Haru", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/5c1gzo1pxec1" },
     { name: "Beastars - Dom", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/dvxgwaxjz1z8" },
     { name: "Beastars - Riz", type: "anime", genre: "Fantasy", url: "https://buzzheavier.com/1non2e7uy6ly" },
-    { name: "Toy Story 2 (1999)", type: "movie", genre: "Animation", url: "https://lootdest.org/s?XUN964Jb", imageUrl: "https://lumiere-a.akamaihd.net/v1/images/p_toystory2_19639_4eca9113.jpeg" },
     { name: "Toy Story 2 (1999) - Barbie", type: "movie", genre: "Animation", url: "https://mega.nz/folder/IQIyhJyQ#krd2ZL3FSZ7Nik_7l1Cvsg/file/lchVFbRL" },
     { name: "Toy Story 2 (1999) - Bo Peep", type: "movie", genre: "Animation", url: "https://mega.nz/folder/IQIyhJyQ#krd2ZL3FSZ7Nik_7l1Cvsg/file/1c5mnSAb" },
     { name: "Toy Story 2 (1999) - Bullseye", type: "movie", genre: "Animation", url: "https://mega.nz/folder/IQIyhJyQ#krd2ZL3FSZ7Nik_7l1Cvsg/file/ldhjDQhL" },
@@ -134,6 +133,7 @@ window.scenepacks = [
     { name: "monsters, inc. (2001) - Randal", type: "movie", genre: "Animation", url: "https://mega.nz/folder/IQIyhJyQ#krd2ZL3FSZ7Nik_7l1Cvsg/file/URIA1RQL" },
     { name: "monsters, inc. (2001) - Yeti", type: "movie", genre: "Animation", url: "https://mega.nz/folder/IQIyhJyQ#krd2ZL3FSZ7Nik_7l1Cvsg/file/xQoC1KZa" },
     { name: "the incredibles (2004)", type: "movie", genre: "Animation", url: "https://loot-link.com/s?lCp085SY", imageUrl: "https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_.jpg" },
+    { name: "Incredibles 2 (2018)" , type: "movie", genre: "Animation", url: "https://loot-link.com/s?FTN1HdPj", imageUrl: "https://m.media-amazon.com/images/I/71wuWglXJrS.jpg" },
     { name: "the incredibles (2004) - Frozone", type: "movie", genre: "Animation", url: "https://mega.nz/folder/IQIyhJyQ#krd2ZL3FSZ7Nik_7l1Cvsg/file/QBx1VBrR" },
     { name: "the incredibles (2004) - Bob Parr", type: "movie", genre: "Animation", url: "https://mega.nz/folder/IQIyhJyQ#krd2ZL3FSZ7Nik_7l1Cvsg/file/YNZm2Ria" },
     { name: "the incredibles (2004) - Jack-Jack Parr", type: "movie", genre: "Animation", url: "https://mega.nz/folder/IQIyhJyQ#krd2ZL3FSZ7Nik_7l1Cvsg/file/FNJmyZZQ" },
@@ -274,7 +274,32 @@ window.scenepacks = [
     { name: "Teenage Mutant Ninja Turtles Mutant Mayhem (2023) - Raphael", type: "movie", genre: "Action", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/dvtkWJYZ" },
     { name: "Teenage Mutant Ninja Turtles Mutant Mayhem (2023) - Splinter", type: "movie", genre: "Action", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/QjsiVDBY" },
     { name: "Teenage Mutant Ninja Turtles Mutant Mayhem (2023) - Shredder", type: "movie", genre: "Action", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/8ilQGTLK" },
-    { name: "Teenage Mutant Ninja Turtles Mutant Mayhem (2023) - Superfly", type: "movie", genre: "Action", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/EjtGnDab", }
+    { name: "Teenage Mutant Ninja Turtles Mutant Mayhem (2023) - Superfly", type: "movie", genre: "Action", url: "https://mega.nz/folder/Ej1jxKzI#S0XYgevWTXGVOy7Y3sKM8Q/file/EjtGnDab", },
+    { name: "Fortnite Chapter 6 Season 2 Official Trailer", type: "game", genre: "Trailer", url: "https://lootdest.org/s?y4rc1Xzo", imageUrl: "https://i0.wp.com/thefutureoftheforce.com/wp-content/uploads/2025/02/img_6777-1.jpg?fit=1024%2C576&ssl=1" },
+    { name: "Godzilla x Kong - The New Empire", type: "movie", genre: "Thriller", url: "https://loot-link.com/s?ScY26JPh", imageUrl: "https://m.media-amazon.com/images/M/MV5BMTY0N2MzODctY2ExYy00OWYxLTkyNDItMTVhZGIxZjliZjU5XkEyXkFqcGc@._V1_.jpg" },
+    { name: "How To Train Your Dragon Official Trailer 4K", type: "movie", genre: "Trailer", url: "https://loot-link.com/s?et3LDjjU", imageUrl: "https://m.media-amazon.com/images/M/MV5BODA5Y2M0NjctNWQzMy00ODRhLWE0MzUtYmE1YTAzZjYyYmQyXkEyXkFqcGc@._V1_.jpg" },
+    { name: "Marvel Rivals Season 2 Trailer", type: "game", genre: "Trailer", url: "https://loot-link.com/s?UVbPBDpg", imageUrl: "https://i0.wp.com/thefutureoftheforce.com/wp-content/uploads/2025/02/img_6777-1.jpg?fit=1024%2C576&ssl=1" },
+    { name: "Transformers Dark Of The Moon - Dino Mirage" , type: "movie", genre: "Action", url: "https://lootdest.org/s?YFcoQkkB", imageUrl: "https://i.pinimg.com/236x/02/fc/c6/02fcc6bddd5e00b82983634772d26663.jpg" },
+    { name: "Monsters University (2013)" , type: "movie", genre: "Animation", url: "https://lootdest.org/s?txRwth4N", imageUrl: "https://lumiere-a.akamaihd.net/v1/images/p_monstersuniversity_19752_34ba9b39.jpeg" },
+    { name: "Ratatouille (2007)" , type: "movie", genre: "Animation", url: "https://lootdest.org/s?YeFo6sk1", imageUrl: "https://i.ebayimg.com/00/s/MTYwMFgxMDY2/z/qQsAAOSw--1bOR8h/$_57.JPG?set_id=8800005007" },
+    { name: "Toy Story (1995)" , type: "movie", genre: "Animation", url: "https://lootdest.org/s?ElFlG7wJ", imageUrl: "https://m.media-amazon.com/images/I/71N8Kav4AtL._UF1000,1000_QL80_.jpg" },
+    { name: "Toy Story 2 (1999)", type: "movie", genre: "Animation", url: "https://lootdest.org/s?XUN964Jb", imageUrl: "https://lumiere-a.akamaihd.net/v1/images/p_toystory2_19639_4eca9113.jpeg" },
+    { name: "Toy Story 3 (2010)" , type: "movie", genre: "Animation", url: "https://loot-link.com/s?jdinxeSq", imageUrl: "https://image.tmdb.org/t/p/original/AbbXspMOwdvwWZgVN0nabZq03Ec.jpg" },
+    { name: "Toy Story 4 (2019)" , type: "movie", genre: "Animation", url: "https://loot-link.com/s?72SaLKUF", imageUrl: "https://m.media-amazon.com/images/I/81DHk8jgJwL.jpg" },
+    { name: "Up (2009)" , type: "movie", genre: "Animation", url: "https://loot-link.com/s?hvVyosMs", imageUrl: "https://filmartgallery.com/cdn/shop/files/Up-Vintage-Movie-Poster-Original_37eb3b83.jpg?v=1741759860" },
+    { name: "Wall-E (2008)" , type: "movie", genre: "Animation", url: "https://loot-link.com/s?hvVyosMs", imageUrl: "https://i.ebayimg.com/00/s/MTYwMFgxMDY2/z/8c4AAOSwfi9jRed9/$_57.JPG?set_id=880000500F" },
+
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
