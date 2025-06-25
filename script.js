@@ -298,6 +298,7 @@ window.scenepacks = [
     { name: "Toy Story 4 (2019)" , type: "movie", genre: "Animation", url: "https://loot-link.com/s?72SaLKUF", imageUrl: "https://m.media-amazon.com/images/I/81DHk8jgJwL.jpg" },
     { name: "Up (2009)" , type: "movie", genre: "Animation", url: "https://loot-link.com/s?hvVyosMs", imageUrl: "https://filmartgallery.com/cdn/shop/files/Up-Vintage-Movie-Poster-Original_37eb3b83.jpg?v=1741759860" },
     { name: "Wall-E (2008)" , type: "movie", genre: "Animation", url: "https://loot-link.com/s?hvVyosMs", imageUrl: "https://i.ebayimg.com/00/s/MTYwMFgxMDY2/z/8c4AAOSwfi9jRed9/$_57.JPG?set_id=880000500F" },
+    { name: "Sinners (2025)" , type: "movie", genre: "Thriller", url: "https://lootdest.org/s?7dszgJG2", imageUrl: "https://i.ebayimg.com/images/g/xoYAAOSw1JNoCpG5/s-l1200.jpg" },
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
