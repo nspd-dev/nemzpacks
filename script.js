@@ -442,6 +442,7 @@ window.scenepacks = [
     { name: "The Last Of Us Part I - Sarah", type: "game", genre: "Action-Adventure", url: "https://lootdest.org/s?WiRK9TUX",  },
     { name: "The Last Of Us Part I - Maria", type: "game", genre: "Action-Adventure", url: "https://lootdest.org/s?bxEjpCjd",  },
     { name: "The Last Of Us Part II", type: "game", genre: "Action-Adventure", url: "https://lootdest.org/s?e0JcCrKv", imageUrl: "https://m.media-amazon.com/images/M/MV5BODIwYWZmYWMtYTliNC00YWQ5LTg5ZmEtNTZhNmUxNjdiMzNiXkEyXkFqcGc@._V1_.jpg" },
+    { name: "The Last Of Us Part II - Ellie Williams", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?yPvShSCK", },
     { name: "The Last Of Us Part II - Abby", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?HmjXEBtP",  },
     { name: "The Last Of Us Part II - Dine", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?weqEzhfs",  },
     { name: "The Last Of Us Part II - Joel Miller", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?SkHwS8uE",  },
