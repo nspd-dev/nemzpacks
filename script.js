@@ -434,7 +434,7 @@ window.scenepacks = [
     { name: "Suicide Squad Kill The Justice League - The Flash", type: "game", genre: "Action-Adventure", url: "https://lootdest.org/s?rmQojtCl", },
     { name: "Suicide Squad Kill The Justice League - Wonder Woman", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?zBi5C80E", },
     { name: "The Last Of Us Part I", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?Y2Y5hSX6", imageUrl: "https://upload.wikimedia.org/wikipedia/en/8/86/The_Last_of_Us_Part_I_cover.jpg" },
-    { name: "The Last Of Us Part I - Joel Miller", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?OEV9vnfC",  },
+    { name: "The Last Of Us Part I - Joel Miller", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?OEV9vnfC", },
     { name: "The Last Of Us Part I - Ellie Williams", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?k6D0Kbey",  },
     { name: "The Last Of Us Part I - Sam", type: "game", genre: "Action-Adventure", url: "https://lootdest.org/s?P9mSfKT2",  },
     { name: "The Last Of Us Part I - Henry", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?20Nr1hVE",  },
@@ -442,7 +442,6 @@ window.scenepacks = [
     { name: "The Last Of Us Part I - Sarah", type: "game", genre: "Action-Adventure", url: "https://lootdest.org/s?WiRK9TUX",  },
     { name: "The Last Of Us Part I - Maria", type: "game", genre: "Action-Adventure", url: "https://lootdest.org/s?bxEjpCjd",  },
     { name: "The Last Of Us Part II", type: "game", genre: "Action-Adventure", url: "https://lootdest.org/s?e0JcCrKv", imageUrl: "https://m.media-amazon.com/images/M/MV5BODIwYWZmYWMtYTliNC00YWQ5LTg5ZmEtNTZhNmUxNjdiMzNiXkEyXkFqcGc@._V1_.jpg" },
-    { name: "The Last Of Us Part II - Ellie Williams", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?yPvShSCK", },
     { name: "The Last Of Us Part II - Abby", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?HmjXEBtP",  },
     { name: "The Last Of Us Part II - Dine", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?weqEzhfs",  },
     { name: "The Last Of Us Part II - Joel Miller", type: "game", genre: "Action-Adventure", url: "https://loot-link.com/s?SkHwS8uE",  },
@@ -556,6 +555,20 @@ window.scenepacks = [
     { name: "Batman Under the Red Hood (2010) - Ras", type: "movie", genre: "Animation", url: "https://lootdest.org/s?kkHlEBe5" },
     { name: "Batman Under the Red Hood (2010) - Red Hood", type: "movie", genre: "Animation", url: "https://loot-link.com/s?Zdvf9Brj" },
     { name: "Batman Under the Red Hood (2010) - Robin", type: "movie", genre: "Animation", url: "https://loot-link.com/s?NHu9mycS" },
+    { name: "The Batman (2022)", type: "movie", genre: "Action", url: "", imageUrl: "https://i.redd.it/ct4v5x4cmsz71.jpg" },
+    { name: "The Batman (2022) - The Batman", type: "movie", genre: "Action", url: "https://lootdest.org/s?qxCPAwpr", },
+    { name: "The Batman (2022) - Penguin ", type: "movie", genre: "Action", url: "https://loot-link.com/s?zDhvjOlH", },
+    { name: "The Batman (2022) - Selina Kyle ", type: "movie", genre: "Action", url: "https://loot-link.com/s?DX2HYAb5", },
+    { name: "The Batman (2022) - Riddler", type: "movie", genre: "Action", url: "https://lootdest.org/s?ykMaFtF1", },
+    { name: "The Batman (2022) - Bruce Wayne" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", },
+    { name: "Batman Begins (2005)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://www.movieposters.com/cdn/shop/files/batman-begins_d81d61f7_grande.jpg?v=1721060854" },
+    { name: "Batman The Dark Knight (2008)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://m.media-amazon.com/images/I/81IfoBox2TL.jpg" },
+    { name: "Batman The Dark Knight Rises (2012)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_FMjpg_UX1000_.jpg" },
+    { name: "Man Of Steel" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://d.ibtimes.com/en/full/727831/man-steel.jpg" },
+    { name: "Batman v. Superman Dawn Of Justice" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://w0.peakpx.com/wallpaper/732/41/HD-wallpaper-batman-v-superman-dawn-of-justice-league-poster.jpg" },
+    { name: "Zack Snyder's Justice League" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://myhotposters.com/cdn/shop/products/mL5174.jpg?v=1748532903" },
+    { name: "The Flash (2023)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://i0.wp.com/batman-news.com/wp-content/uploads/2023/04/The-Flash-Movie-Poster-International-01.jpeg?fit=1382%2C2048&quality=80&strip=info&ssl=1" },
+    { name: "Black Adam (2022)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://movieposterhub.com/cdn/shop/files/BLACKADAM_8d609223-b263-4cde-a958-f86c1982408d.jpg?v=1706760766" },
     { name: "Blue Beettle (2023)", type: "movie", genre: "Action", url: "https://loot-link.com/s?TzQMSrNu", imageUrl: "https://image.tmdb.org/t/p/original/s1X0pTotcoIfmf5lCHizioxWoL5.jpg" },
     { name: "Blue Beettle (2023) - Blue Beetle", type: "movie", genre: "Action", url: "https://lootdest.org/s?O5rfHiMX" },
     { name: "Blue Beettle (2023) - Jaime Reyes", type: "movie", genre: "Action", url: "https://lootdest.org/s?I1R2UFPb" },
@@ -742,9 +755,13 @@ window.scenepacks = [
     { name: "Sinners (2025) - Remmick" , type: "movie", genre: "Thriller", url: "https://loot-link.com/s?JClWufek", },
     { name: "Sinners (2025) - Smoke" , type: "movie", genre: "Thriller", url: "https://lootdest.org/s?B1w6ihxR", },
     { name: "Sinners (2025) - Stack" , type: "movie", genre: "Thriller", url: "https://lootdest.org/s?Fc3kKTiB", },
-    { name: "Ghost Rider Spirit of Vengeance", type: "movie", genre: "Action", url: "https://lootdest.org/s?coyLms8k", imageUrl: "https://m.media-amazon.com/images/M/MV5BN2FmZGVlNTgtYTllNC00YmUzLTk5YmUtNWNhMzk3ZmE2NmQ0XkEyXkFqcGc@._V1_.jpg" },
-    { name: "Ghost Rider Spirit of Vengeance - Ghost Rider/Johnny", type: "movie", genre: "Action", url: "https://lootdest.org/s?coyLms8k", },
-    { name: "Ghost Rider", type: "movie", genre: "Action", url: "https://loot-link.com/s?zefEx01Q", imageUrl: "https://m.media-amazon.com/images/I/517-RriBxhL._UF894,1000_QL80_.jpg" }
+
+
+
+
+    
+
+
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -752,7 +769,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof str !== 'string') return '';
         str = str.toLowerCase();
         str = str.replace(/[-:()*,]/g, ' ');
-        str = str.replace(/'/g, '');s
+        str = str.replace(/'/g, '');
         str = str.replace(/\s+/g, ' ');
         return str.trim();
     }
