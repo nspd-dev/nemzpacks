@@ -742,6 +742,9 @@ window.scenepacks = [
     { name: "Sinners (2025) - Remmick" , type: "movie", genre: "Thriller", url: "https://loot-link.com/s?JClWufek", },
     { name: "Sinners (2025) - Smoke" , type: "movie", genre: "Thriller", url: "https://lootdest.org/s?B1w6ihxR", },
     { name: "Sinners (2025) - Stack" , type: "movie", genre: "Thriller", url: "https://lootdest.org/s?Fc3kKTiB", },
+    { name: "Ghost Rider Spirit of Vengeance", type: "movie", genre: "Action", url: "https://lootdest.org/s?coyLms8k", imageUrl: "https://m.media-amazon.com/images/M/MV5BN2FmZGVlNTgtYTllNC00YmUzLTk5YmUtNWNhMzk3ZmE2NmQ0XkEyXkFqcGc@._V1_.jpg" },
+    { name: "Ghost Rider Spirit of Vengeance - Ghost Rider/Johnny", type: "movie", genre: "Action", url: "https://lootdest.org/s?coyLms8k", },
+    { name: "Ghost Rider", type: "movie", genre: "Action", url: "https://loot-link.com/s?zefEx01Q", imageUrl: "https://m.media-amazon.com/images/I/517-RriBxhL._UF894,1000_QL80_.jpg" }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -749,7 +752,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof str !== 'string') return '';
         str = str.toLowerCase();
         str = str.replace(/[-:()*,]/g, ' ');
-        str = str.replace(/'/g, '');
+        str = str.replace(/'/g, '');s
         str = str.replace(/\s+/g, ' ');
         return str.trim();
     }
