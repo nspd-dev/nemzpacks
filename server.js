@@ -5,11 +5,13 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(cors({ origin: 'https://nemzpacks.vercel.app' })); 
-const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL; 
+app.use(cors({ origin: '*' }));
+app.use(express.json());
 
-if (!DISCORD_WEBHOOK_URL) { 
-    console.error(".env missing (or DISCORD_WEBHOOK_URL not set in Vercel)."); 
+const disc = process.env.disc;
+
+if (!disc) {
+    console.error(".env missing");
     process.exit(1);
 }
 
@@ -26,7 +28,7 @@ app.post('/api/track-click', async (req, res) => {
     };
 
     try {
-        const discordResponse = await fetch(DISCORD_WEBHOOK_URL, {
+        const discordResponse = await fetch(disc, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -56,5 +58,3 @@ app.post('/api/track-click', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server's live`);
 });
-
-module.exports = app;
