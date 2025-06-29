@@ -373,7 +373,7 @@ window.scenepacks = [
     { name: "Spider-Man: Into the Spider-Verse - Dock Ock" , type: "movie", genre: "Action", url: "https://loot-link.com/s?B0t0OOeG" },
     { name: "Spider-Man: Into the Spider-Verse - Peter Parker" , type: "movie", genre: "Action", url: "https://loot-link.com/s?4CcPp1WU" },
     { name: "Spider-Man: Into the Spider-Verse - Rio Morales" , type: "movie", genre: "Action", url: "https://lootdest.org/s?DfTI3pRI" },
-    { name: "Spider-Man: Across the Spider-Verse", type: "movie", genre: "Animation", url: "https://loot-link.com/s?f6wMuaRj", imageUrl: "https://artofthemovies.co.uk/cdn/shop/files/IMG_2735_45d80c97-addd-4211-9f31-315627c9d298_1024x1024@2x.jpg?v=1694861775" },
+    { name: "Spider-Man: Across the Spider-Verse", type: "movie", genre: "Animation", url: "https://loot-link.com/s?f6wMuaRj", imageUrl: "https://artofthemovies.co.uk/cdn/shop/files/IMG_2735_45d80c97-addd-4211-9f31-315627c9d298_1024x1024@2x.jpg" },
     { name: "Spider-Man: Across the Spider-Verse - Miles Morales Spider-Man" , type: "movie", genre: "Action", url: "https://lootdest.org/s?5lxG0s8r" },
     { name: "Spider-Man: Across the Spider-Verse - Gwen Stacy" , type: "movie", genre: "Action", url: "https://lootdest.org/s?PM9BCDXw" },
     { name: "Spider-Man: Across the Spider-Verse - Miles Morales" , type: "movie", genre: "Action", url: "https://loot-link.com/s?uKA7gHEJ" },
@@ -885,7 +885,7 @@ document.addEventListener('DOMContentLoaded', () => {
             genreFilter.appendChild(option);
         });
 
-        filterAndDisplayItems();
+        displayResults(allItemsForCategory, resultsContainer, noResultsMessage, resultsSection, 'scenepack-card category-page-card', false);
 
         searchInput.addEventListener('input', filterAndDisplayItems);
         genreFilter.addEventListener('change', filterAndDisplayItems);
@@ -912,6 +912,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         const segments = currentPathname.split('/').filter(s => s !== '');
         pageIdentifier = segments[0];
+        if (pageIdentifier.endsWith('.html')) {
+            pageIdentifier = pageIdentifier.replace('.html', '');
+        }
     }
 
     if (pageIdentifier === 'index') {
