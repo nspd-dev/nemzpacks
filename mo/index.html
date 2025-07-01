@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NZPacks - Mo</title>
+    <title>NZPacks - Mo's Socials</title>
+
+    <link rel="icon" type="image/png" href="/512x512.png">
+    <link rel="shortcut icon" type="image/png" href="/512x512.png">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
         :root {
             --color-bg-primary: #000000;
@@ -40,6 +46,8 @@
 
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         html {
@@ -54,49 +62,165 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
-            padding: var(--spacing-lg) var(--spacing-sm);
-            overflow-x: hidden;
-            margin: 0;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--color-bg-primary) 0%, #1a1a1a 100%);
+        }
+
+        .video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            filter: blur(5px) brightness(0.4);
+            opacity: 0.6;
+            display: block;
+        }
+
+        .click-to-enter {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: opacity var(--transition-speed-slow) var(--transition-ease-out), visibility var(--transition-speed-slow) var(--transition-ease-out);
+        }
+
+        .click-to-enter.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .enter-text {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 700;
+            color: var(--color-text-light);
+            text-shadow: 0 0 15px var(--color-glow-soft);
+            margin-bottom: var(--spacing-md);
+            animation: pulse-glow 2s infinite alternate ease-in-out;
+        }
+
+        .enter-subtitle {
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            color: rgba(255, 255, 255, 0.7);
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes pulse-glow {
+            from { text-shadow: 0 0 10px var(--color-glow-soft), 0 0 20px var(--color-glow-strong); }
+            to { text-shadow: 0 0 20px var(--color-glow-soft), 0 0 40px var(--color-glow-strong); }
         }
 
         .main-content-wrapper {
-            max-width: 800px;
-            width: 100%;
+            max-width: 400px;
+            width: 95%;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: var(--spacing-xl) var(--spacing-lg);
+            padding: var(--spacing-lg);
             background-color: var(--color-card-bg);
             border-radius: var(--border-radius-lg);
             box-shadow: 0 0 30px var(--color-shadow-soft), 0 0 60px var(--color-glow-strong);
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
             border: 1px solid var(--color-border-subtle);
-            animation: fadeIn 0.8s ease-out;
-            margin-top: var(--spacing-xl);
-            margin-bottom: auto;
+            margin: auto;
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s var(--transition-ease-out), transform 1s var(--transition-ease-out);
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-15px); }
-            to { opacity: 1; transform: translateY(0); }
+        .main-content-wrapper.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
-        h1 {
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        .profile-avatar-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .profile-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: var(--border-radius-circle);
+            object-fit: cover;
+            border: 3px solid var(--color-border-subtle);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+        
+        h1.user-name {
             text-shadow: 0 0 8px var(--color-glow-soft);
             margin-top: 0;
-            margin-bottom: var(--spacing-sm);
-            font-size: 2.2rem;
+            margin-bottom: 0;
+            font-size: 2.5rem;
             font-weight: 700;
         }
 
-        .tagline {
-            color: rgba(255, 255, 255, 0.7);
-            margin-top: 0;
+        .section-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+            position: relative;
+            z-index: 1;
+        }
+
+        hr.divider {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.15), transparent);
+            width: 80%;
+            margin: var(--spacing-sm) auto var(--spacing-lg) auto;
+        }
+
+        .social-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--spacing-md);
+            width: 100%;
+            margin-top: var(--spacing-md);
             margin-bottom: var(--spacing-lg);
-            font-size: 1rem;
-            font-weight: 300;
         }
 
         .social-card-link {
@@ -107,10 +231,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
+            justify-content: center;
             background-color: var(--color-card-bg);
-            border-radius: var(--border-radius-md);
-            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-sm);
             box-shadow: 0 0 15px var(--color-shadow-soft), inset
                 0 0 5px rgba(255, 255, 255, 0.03);
             transition: transform var(--transition-speed-medium)
@@ -120,9 +244,29 @@
                 background-color var(--transition-speed-medium)
                 var(--transition-ease-out);
             border: 1px solid var(--color-border-subtle);
-            width: 100%;
-            max-width: 320px;
+            width: 80px;
+            height: 80px;
             cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-card-link::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            transform: rotate(45deg);
+            opacity: 0;
+            transition: opacity var(--transition-speed-medium) ease-out;
+            z-index: 0;
+        }
+
+        .social-card-link:hover::before {
+            opacity: 1;
         }
 
         .social-card-link:hover {
@@ -133,43 +277,18 @@
             text-decoration: none;
         }
 
-        .social-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: var(--spacing-md);
-            width: 100%;
-            justify-items: center;
-            margin-top: var(--spacing-md);
-            margin-bottom: var(--spacing-lg);
-        }
-
         .social-card-link .icon {
-            font-size: 3.5rem;
-            margin-bottom: var(--spacing-sm);
+            font-size: 2.2rem;
+            margin-bottom: 0;
             color: var(--color-text-light);
             text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+            position: relative;
+            z-index: 1;
         }
         
-        .social-card-link h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: var(--spacing-xs);
-            color: var(--color-text-light);
-            text-shadow: 0 0 6px var(--color-glow-soft);
-        }
-
+        .social-card-link h3,
         .social-card-link .username-text {
-            font-size: 1rem;
-            font-weight: 500;
-            color: var(--color-text-light);
-            text-decoration: none;
-            text-shadow: 0 0 5px var(--color-link-glow);
-            transition: text-shadow var(--transition-speed-fast) ease-in-out;
-        }
-        
-        .social-card-link .username-text:hover {
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-            text-decoration: none;
+            display: none;
         }
 
         .footer {
@@ -179,40 +298,158 @@
             text-shadow: none;
         }
 
-        /* Removed music-player styles */
-        
+        .volume-control {
+            position: fixed;
+            top: var(--spacing-lg);
+            right: var(--spacing-lg);
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-sm) var(--spacing-md);
+            background: var(--color-card-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--color-border-subtle);
+            border-radius: 50px;
+            transition: all var(--transition-speed-medium) var(--transition-ease-bezier);
+            box-shadow: 0 0 15px var(--color-shadow-soft);
+        }
+
+        .volume-control:hover {
+            background: var(--color-hover-bg);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px var(--color-link-glow);
+            transform: translateY(-2px);
+        }
+
+        .volume-button {
+            background: none;
+            border: none;
+            color: var(--color-text-light);
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 50%;
+            transition: all var(--transition-speed-fast) ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 36px;
+            height: 36px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        .volume-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.1);
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+        }
+
+        .volume-slider-container {
+            opacity: 0;
+            width: 0;
+            visibility: hidden;
+            overflow: hidden;
+            transform: translateX(10px);
+            transition: opacity var(--transition-speed-medium) ease-out,
+                        width var(--transition-speed-medium) ease-out,
+                        transform var(--transition-speed-medium) ease-out;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .volume-control:hover .volume-slider-container,
+        .volume-control.show-slider .volume-slider-container {
+            opacity: 1;
+            width: 80px;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
+        .volume-slider {
+            width: 80px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 14px;
+            height: 14px;
+            background: var(--color-text-light);
+            border-radius: var(--border-radius-circle);
+            cursor: pointer;
+            box-shadow: 0 0 5px var(--color-link-glow);
+            transition: background var(--transition-speed-fast) ease-out, box-shadow var(--transition-speed-fast) ease-out;
+        }
+
+        .volume-slider::-webkit-slider-thumb:hover {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px var(--color-link-glow);
+        }
+
         @media (max-width: 768px) {
-            .main-content-wrapper {
-                padding: var(--spacing-lg) var(--spacing-sm);
-                width: 95%;
-                margin-top: var(--spacing-lg);
+            .volume-control {
+                top: var(--spacing-sm);
+                right: var(--spacing-sm);
+                gap: var(--spacing-xs);
+                padding: var(--spacing-xs) var(--spacing-sm);
             }
-            h1 {
-                font-size: 2rem;
+            .volume-button {
+                font-size: 1rem;
+                min-width: 30px;
+                height: 30px;
+            }
+            .volume-control:hover .volume-slider-container,
+            .volume-control.show-slider .volume-slider-container {
+                width: 60px;
+            }
+            .volume-slider {
+                width: 60px;
+            }
+            .main-content-wrapper {
+                padding: var(--spacing-lg) var(--spacing-md);
+                width: 95%;
+            }
+            h1.user-name {
+                font-size: 2.2rem;
             }
             .social-grid {
-                grid-template-columns: 1fr;
+                gap: var(--spacing-sm);
             }
             .social-card-link {
-                max-width: unset;
+                width: 70px;
+                height: 70px;
+            }
+            .social-card-link .icon {
+                font-size: 2rem;
             }
         }
 
         @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8rem;
+            .main-content-wrapper {
+                padding: var(--spacing-md);
+            }
+            h1.user-name {
+                font-size: 2rem;
+            }
+            .profile-avatar-container {
+                width: 100px;
+                height: 100px;
+            }
+            .social-card-link {
+                width: 65px;
+                height: 65px;
             }
             .social-card-link .icon {
-                font-size: 3rem;
-            }
-            .social-card-link h3 {
-                font-size: 1.2rem;
-            }
-            .social-card-link .username-text {
-                font-size: 0.95rem;
-            }
-            .tagline {
-                font-size: 0.9rem;
+                font-size: 1.8rem;
             }
         }
 
@@ -252,33 +489,61 @@
     </style>
 </head>
 <body>
-    <div class="main-content-wrapper">
-        <h1>My Socials</h1>
-        <p class="tagline">Connect with me!</p>
+    <div class="video-background">
+        <video id="bgVideo" loop playsinline muted>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="click-to-enter" id="clickToEnter">
+        <div class="enter-text">ENTER</div>
+        <div class="enter-subtitle">Click anywhere to continue</div>
+    </div>
+
+    <div class="volume-control" id="volumeControl">
+        <button class="volume-button" id="volumeButton">
+            <i class="fas fa-volume-mute" id="volumeIcon"></i>
+        </button>
+        <div class="volume-slider-container">
+            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
+        </div>
+    </div>
+
+    <div class="main-content-wrapper" id="mainContentWrapper">
+        <div class="profile-section">
+            <div class="profile-avatar-container">
+                <img src="pfp.jpg" alt="Profile Avatar" class="profile-avatar">
+            </div>
+            <h1 class="user-name">NZPacks</h1>
+        </div>
+
+        <p class="section-label">CONNECT</p>
+        <hr class="divider">
 
         <div class="social-grid">
             <a href="https://www.tiktok.com/@.nspd" target="_blank" rel="noopener noreferrer" class="social-card-link">
                 <i class="fa-brands fa-tiktok icon"></i>
-                <h3>TikTok</h3>
-                <p class="username-text">@.nspd</p>
+                <h3 class="sr-only">TikTok</h3> 
+                <p class="username-text sr-only">@.nspd</p>
             </a>
 
             <a href="https://www.instagram.com/ns.pdd/" target="_blank" rel="noopener noreferrer" class="social-card-link">
                 <i class="fa-brands fa-instagram icon"></i>
-                <h3>Instagram</h3>
-                <p class="username-text">@ns.pdd</p>
+                <h3 class="sr-only">Instagram</h3>
+                <p class="username-text sr-only">@ns.pdd</p>
             </a>
 
-            <a href="#" class="social-card-link" data-discord-username=".nspd" onclick="copyUsername(event)">
+            <a id="emailLink" class="social-card-link" data-email="monspdcontact@gmail.com" href="#">
+                <i class="fa-solid fa-envelope icon"></i>
+                <h3 class="sr-only">Mail</h3>
+                <p class="username-text sr-only">monspdcontact@gmail.com</p>
+            </a>
+
+            <a href="https://discord.gg/PJwszccExC" target="_blank" rel="noopener noreferrer" class="social-card-link">
                 <i class="fa-brands fa-discord icon"></i>
-                <h3>Discord username</h3>
-                <p class="username-text">.nspd</p>
-            </a>
-
-            <a href="mailto:monspdcontact@gmail.com" class="social-card-link contact-card" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-envelope icon"></i>
-                <h3>Contact Me</h3>
-                <p class="username-text">monspdcontact@gmail.com</p>
+                <h3 class="sr-only">Discord</h3>
+                <p class="username-text sr-only">.nspd</p>
             </a>
         </div>
 
@@ -290,6 +555,101 @@
     <div id="copyNotification" class="copy-message"></div>
 
     <script>
+        let isVideoEntered = false;
+        let lastVolume = 0.5;
+
+        document.getElementById('clickToEnter').addEventListener('click', function() {
+            const overlay = document.getElementById('clickToEnter');
+            const mainContentWrapper = document.getElementById('mainContentWrapper');
+            const bgVideo = document.getElementById('bgVideo');
+
+            overlay.classList.add('hidden');
+
+            setTimeout(() => {
+                mainContentWrapper.classList.add('visible');
+            }, 300);
+
+            if (bgVideo) {
+                bgVideo.muted = false;
+                bgVideo.volume = lastVolume;
+                bgVideo.play().catch(e => {
+                    console.warn('Video autoplay prevented:', e);
+                });
+            }
+            isVideoEntered = true;
+            initializeVolumeControl();
+        });
+
+        function initializeVolumeControl() {
+            const bgVideo = document.getElementById('bgVideo');
+            const volumeButton = document.getElementById('volumeButton');
+            const volumeSlider = document.getElementById('volumeSlider');
+            const volumeIcon = document.getElementById('volumeIcon');
+            const volumeControl = document.getElementById('volumeControl');
+
+            if (!bgVideo) {
+                volumeControl.style.display = 'none';
+                return;
+            }
+
+            volumeSlider.value = bgVideo.volume * 100;
+            updateVolumeIcon(bgVideo.volume, bgVideo.muted);
+
+            volumeButton.addEventListener('click', function(e) {
+                if (!isVideoEntered) return;
+
+                if (window.innerWidth <= 768) {
+                    volumeControl.classList.toggle('show-slider');
+                    e.stopPropagation();
+                } else {
+                    if (bgVideo.muted) {
+                        bgVideo.muted = false;
+                        bgVideo.volume = lastVolume;
+                    } else {
+                        lastVolume = bgVideo.volume;
+                        bgVideo.muted = true;
+                    }
+                    updateVolumeIcon(bgVideo.volume, bgVideo.muted);
+                }
+            });
+
+            volumeSlider.addEventListener('input', function() {
+                if (!isVideoEntered) return;
+                const volume = parseFloat(this.value) / 100;
+                bgVideo.volume = volume;
+                if (volume > 0) {
+                    bgVideo.muted = false;
+                    lastVolume = volume;
+                } else {
+                    bgVideo.muted = true;
+                }
+                updateVolumeIcon(volume, bgVideo.muted);
+            });
+
+            function updateVolumeIcon(volume, isMuted) {
+                if (isMuted || volume === 0) {
+                    volumeIcon.className = 'fas fa-volume-mute';
+                } else if (volume < 0.5) {
+                    volumeIcon.className = 'fas fa-volume-down';
+                } else {
+                    volumeIcon.className = 'fas fa-volume-up';
+                }
+            }
+
+            bgVideo.addEventListener('volumechange', function() {
+                if (!bgVideo.muted) {
+                    volumeSlider.value = bgVideo.volume * 100;
+                }
+                updateVolumeIcon(bgVideo.volume, bgVideo.muted);
+            });
+
+            document.addEventListener('click', function(e) {
+                if (volumeControl.classList.contains('show-slider') && !volumeControl.contains(e.target)) {
+                    volumeControl.classList.remove('show-slider');
+                }
+            });
+        }
+
         const copyNotification = document.getElementById('copyNotification');
 
         function showNotification(message) {
@@ -300,19 +660,35 @@
             }, 1500);
         }
 
-        function copyUsername(event) {
-            event.preventDefault();
-            const username = event.currentTarget.dataset.discordUsername;
-            
-            const tempInput = document.createElement('textarea');
-            tempInput.value = username;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailLink = document.getElementById('emailLink');
+            const emailAddress = emailLink.getAttribute('data-email');
 
-            showNotification('Copied!');
-        }
+            emailLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (!isVideoEntered) return;
+
+                navigator.clipboard.writeText(emailAddress).then(() => {
+                    showNotification('Email Copied!');
+                }).catch(err => {
+                    console.error('Failed to copy email: ', err);
+                    showNotification('Copy failed!');
+                });
+            });
+
+            const bgVideo = document.getElementById('bgVideo');
+            if (bgVideo) {
+                bgVideo.addEventListener('error', function() {
+                    console.warn('Video failed to load or unsupported. Using fallback gradient.');
+                    document.querySelector('.video-background').style.background = 'linear-gradient(135deg, var(--color-bg-primary) 0%, #1a1a1a 100%)';
+                    this.style.display = 'none';
+                });
+            }
+        });
+
+        const styleSheet = document.createElement("style");
+        styleSheet.textContent = `.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }`;
+        document.head.appendChild(styleSheet);
     </script>
 </body>
 </html>
