@@ -568,7 +568,7 @@ window.scenepacks = [
     { name: "Batman v. Superman Dawn Of Justice" , type: "movie", genre: "Action", url: "https://loot-link.com/s?HOCKe9ht", imageUrl: "https://w0.peakpx.com/wallpaper/732/41/HD-wallpaper-batman-v-superman-dawn-of-justice-league-poster.jpg" },
     { name: "Zack Snyder's Justice League" , type: "movie", genre: "Action", url: "https://lootdest.org/s?UXogu3zK", imageUrl: "https://myhotposters.com/cdn/shop/products/mL5174.jpg?v=1748532903" },
     { name: "The Flash (2023)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?xA64XBeA", imageUrl: "https://i0.wp.com/batman-news.com/wp-content/uploads/2023/04/The-Flash-Movie-Poster-International-01.jpeg?fit=1382%2C2048&quality=80&strip=info&ssl=1" },
-    { name: "Black Adam (2022)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?r0XsSIVu", imageUrl: "https://movieposterhub.com/cdn/shop/files/BLACKADAM_8d609223-b263-4cde-a958-f86c1982408d.jpg?v=1706760766" }
+    { name: "Black Adam (2022)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?r0XsSIVu", imageUrl: "https://movieposterhub.com/cdn/shop/files/BLACKADAM_8d609223-b263-4cde-a958-f86c1982408d.jpg?v=1706760766" },
     { name: "Blue Beettle (2023)", type: "movie", genre: "Action", url: "https://loot-link.com/s?TzQMSrNu", imageUrl: "https://image.tmdb.org/t/p/original/s1X0pTotcoIfmf5lCHizioxWoL5.jpg" },
     { name: "Blue Beettle (2023) - Blue Beetle", type: "movie", genre: "Action", url: "https://lootdest.org/s?O5rfHiMX" },
     { name: "Blue Beettle (2023) - Jaime Reyes", type: "movie", genre: "Action", url: "https://lootdest.org/s?I1R2UFPb" },
@@ -755,13 +755,6 @@ window.scenepacks = [
     { name: "Sinners (2025) - Remmick" , type: "movie", genre: "Thriller", url: "https://loot-link.com/s?JClWufek", },
     { name: "Sinners (2025) - Smoke" , type: "movie", genre: "Thriller", url: "https://lootdest.org/s?B1w6ihxR", },
     { name: "Sinners (2025) - Stack" , type: "movie", genre: "Thriller", url: "https://lootdest.org/s?Fc3kKTiB", },
-
-
-
-
-    
-
-
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -885,7 +878,7 @@ document.addEventListener('DOMContentLoaded', () => {
             genreFilter.appendChild(option);
         });
 
-        filterAndDisplayItems();
+        displayResults(allItemsForCategory, resultsContainer, noResultsMessage, resultsSection, 'scenepack-card category-page-card', false);
 
         searchInput.addEventListener('input', filterAndDisplayItems);
         genreFilter.addEventListener('change', filterAndDisplayItems);
@@ -912,6 +905,9 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         const segments = currentPathname.split('/').filter(s => s !== '');
         pageIdentifier = segments[0];
+        if (pageIdentifier.endsWith('.html')) {
+            pageIdentifier = pageIdentifier.replace('.html', '');
+        }
     }
 
     if (pageIdentifier === 'index') {
