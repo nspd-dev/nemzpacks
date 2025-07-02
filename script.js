@@ -373,7 +373,7 @@ window.scenepacks = [
     { name: "Spider-Man: Into the Spider-Verse - Dock Ock" , type: "movie", genre: "Action", url: "https://loot-link.com/s?B0t0OOeG" },
     { name: "Spider-Man: Into the Spider-Verse - Peter Parker" , type: "movie", genre: "Action", url: "https://loot-link.com/s?4CcPp1WU" },
     { name: "Spider-Man: Into the Spider-Verse - Rio Morales" , type: "movie", genre: "Action", url: "https://lootdest.org/s?DfTI3pRI" },
-    { name: "Spider-Man: Across the Spider-Verse", type: "movie", genre: "Animation", url: "https://loot-link.com/s?f6wMuaRj", imageUrl: "https://artofthemovies.co.uk/cdn/shop/files/IMG_2735_45d80c97-addd-4211-9f31-315627c9d298_1024x1024@2x.jpg" },
+    { name: "Spider-Man: Across the Spider-Verse", type: "movie", genre: "Animation", url: "https://loot-link.com/s?f6wMuaRj", imageUrl: "https://artofthemovies.co.uk/cdn/shop/files/IMG_2735_45d80c97-addd-4211-9f31-315627c9d298_1024x1024@2x.jpg?v=1694861775" },
     { name: "Spider-Man: Across the Spider-Verse - Miles Morales Spider-Man" , type: "movie", genre: "Action", url: "https://lootdest.org/s?5lxG0s8r" },
     { name: "Spider-Man: Across the Spider-Verse - Gwen Stacy" , type: "movie", genre: "Action", url: "https://lootdest.org/s?PM9BCDXw" },
     { name: "Spider-Man: Across the Spider-Verse - Miles Morales" , type: "movie", genre: "Action", url: "https://loot-link.com/s?uKA7gHEJ" },
@@ -561,14 +561,14 @@ window.scenepacks = [
     { name: "The Batman (2022) - Selina Kyle ", type: "movie", genre: "Action", url: "https://loot-link.com/s?DX2HYAb5", },
     { name: "The Batman (2022) - Riddler", type: "movie", genre: "Action", url: "https://lootdest.org/s?ykMaFtF1", },
     { name: "The Batman (2022) - Bruce Wayne" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", },
-    { name: "Batman Begins (2005)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://www.movieposters.com/cdn/shop/files/batman-begins_d81d61f7_grande.jpg?v=1721060854" },
-    { name: "Batman The Dark Knight (2008)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://m.media-amazon.com/images/I/81IfoBox2TL.jpg" },
-    { name: "Batman The Dark Knight Rises (2012)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_FMjpg_UX1000_.jpg" },
-    { name: "Man Of Steel" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://d.ibtimes.com/en/full/727831/man-steel.jpg" },
-    { name: "Batman v. Superman Dawn Of Justice" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://w0.peakpx.com/wallpaper/732/41/HD-wallpaper-batman-v-superman-dawn-of-justice-league-poster.jpg" },
-    { name: "Zack Snyder's Justice League" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://myhotposters.com/cdn/shop/products/mL5174.jpg?v=1748532903" },
-    { name: "The Flash (2023)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://i0.wp.com/batman-news.com/wp-content/uploads/2023/04/The-Flash-Movie-Poster-International-01.jpeg?fit=1382%2C2048&quality=80&strip=info&ssl=1" },
-    { name: "Black Adam (2022)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?lp5LlcOo", imageUrl: "https://movieposterhub.com/cdn/shop/files/BLACKADAM_8d609223-b263-4cde-a958-f86c1982408d.jpg?v=1706760766" },
+    { name: "Batman Begins (2005)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?LrvFE7Kq", imageUrl: "https://www.movieposters.com/cdn/shop/files/batman-begins_d81d61f7_grande.jpg?v=1721060854" },
+    { name: "Batman The Dark Knight (2008)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?52kFcWXE", imageUrl: "https://m.media-amazon.com/images/I/81IfoBox2TL.jpg" },
+    { name: "Batman The Dark Knight Rises (2012)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?PHTBo36K", imageUrl: "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_FMjpg_UX1000_.jpg" },
+    { name: "Man Of Steel" , type: "movie", genre: "Action", url: "", imageUrl: "https://d.ibtimes.com/en/full/727831/man-steel.jpg" },
+    { name: "Batman v. Superman Dawn Of Justice" , type: "movie", genre: "Action", url: "https://loot-link.com/s?HOCKe9ht", imageUrl: "https://w0.peakpx.com/wallpaper/732/41/HD-wallpaper-batman-v-superman-dawn-of-justice-league-poster.jpg" },
+    { name: "Zack Snyder's Justice League" , type: "movie", genre: "Action", url: "https://lootdest.org/s?UXogu3zK", imageUrl: "https://myhotposters.com/cdn/shop/products/mL5174.jpg?v=1748532903" },
+    { name: "The Flash (2023)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?xA64XBeA", imageUrl: "https://i0.wp.com/batman-news.com/wp-content/uploads/2023/04/The-Flash-Movie-Poster-International-01.jpeg?fit=1382%2C2048&quality=80&strip=info&ssl=1" },
+    { name: "Black Adam (2022)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?r0XsSIVu", imageUrl: "https://movieposterhub.com/cdn/shop/files/BLACKADAM_8d609223-b263-4cde-a958-f86c1982408d.jpg?v=1706760766" }
     { name: "Blue Beettle (2023)", type: "movie", genre: "Action", url: "https://loot-link.com/s?TzQMSrNu", imageUrl: "https://image.tmdb.org/t/p/original/s1X0pTotcoIfmf5lCHizioxWoL5.jpg" },
     { name: "Blue Beettle (2023) - Blue Beetle", type: "movie", genre: "Action", url: "https://lootdest.org/s?O5rfHiMX" },
     { name: "Blue Beettle (2023) - Jaime Reyes", type: "movie", genre: "Action", url: "https://lootdest.org/s?I1R2UFPb" },
@@ -885,7 +885,7 @@ document.addEventListener('DOMContentLoaded', () => {
             genreFilter.appendChild(option);
         });
 
-        displayResults(allItemsForCategory, resultsContainer, noResultsMessage, resultsSection, 'scenepack-card category-page-card', false);
+        filterAndDisplayItems();
 
         searchInput.addEventListener('input', filterAndDisplayItems);
         genreFilter.addEventListener('change', filterAndDisplayItems);
@@ -912,9 +912,6 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         const segments = currentPathname.split('/').filter(s => s !== '');
         pageIdentifier = segments[0];
-        if (pageIdentifier.endsWith('.html')) {
-            pageIdentifier = pageIdentifier.replace('.html', '');
-        }
     }
 
     if (pageIdentifier === 'index') {
