@@ -572,7 +572,7 @@ window.scenepacks = [
     { name: "Black Adam (2022)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?r0XsSIVu", imageUrl: "https://movieposterhub.com/cdn/shop/files/BLACKADAM_8d609223-b263-4cde-a958-f86c1982408d.jpg?v=1706760766" },
     { name: "Birds of Prey" , type: "movie", genre: "Action", url: "https://loot-link.com/s?7CW2VC1S", imageUrl: "https://m.media-amazon.com/images/I/710H0wZePbL.jpg" },
     { name: "Catwoman (2004)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?6uoaBGPP", imageUrl: "https://m.media-amazon.com/images/I/51SeCsRTw5L.jpg" },
-    { name: "Barbie (2023)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?e5QrQJwt", imageUrl: "https://variety.com/wp-content/uploads/2023/04/Fs3wHN8akAAJF08.jpeg?w=800" },
+    { name: "Barbie (2023)" , type: "movie", genre: "Drama", url: "https://loot-link.com/s?e5QrQJwt", imageUrl: "https://variety.com/wp-content/uploads/2023/04/Fs3wHN8akAAJF08.jpeg?w=800" },
     { name: "Bumblebee (2018)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?T0Qm4DCJ", imageUrl: "https://m.media-amazon.com/images/M/MV5BMjUwNjU5NDMyNF5BMl5BanBnXkFtZTgwNzgxNjM2NzM@._V1_.jpg" },
     { name: "Transformers (2007)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?CSdp1vJ7", imageUrl: "https://i.ebayimg.com/images/g/5dAAAOSwY2ZkUGbc/s-l1200.jpg" },
     { name: "Transformers Revenge of the Fallen" , type: "movie", genre: "Action", url: "https://loot-link.com/s?atdG2fVM", imageUrl: "https://m.media-amazon.com/images/I/71vJWZb0cjL._UF894,1000_QL80_.jpg" },
@@ -822,10 +822,22 @@ window.scenepacks = [
     { name: "Daredevil Season 2" , type: "tvshow", genre: "Action", url: "https://lootdest.org/s?mcWOvpt4", imageUrl: "https://i.pinimg.com/736x/f8/25/bf/f825bf8061a6dfb776035f09993f3ba4.jpg" },
     { name: "Daredevil Season 3" , type: "tvshow", genre: "Action", url: "https://loot-link.com/s?UJvXC5aW", imageUrl: "https://cdn.marvel.com/content/1x/daredevil_s3_vertical-main_rgb.jpg" },
     { name: "Spectacular Spider-Man " , type: "tvshow", genre: "Action", url: "https://lootdest.org/s?zckaakaB", imageUrl: "https://preview.redd.it/if-a-season-3-for-spectacular-spider-man-gets-announced-v0-6m9ro9rtt3lc1.jpeg?auto=webp&s=2773ed07b8977d8c87a050ae85f21d96513cc9eb" },
-    { name: "The Boys Season 1", type: "Tv-Show", genre: "Action", url: "https://lootdest.org/s?Tzxukts0", imageUrl: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p16826253_b_v13_ab.jpg" },
+    { name: "The Boys Season 1", type: "tvshows", genre: "Action", url: "https://lootdest.org/s?Tzxukts0", imageUrl: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p16826253_b_v13_ab.jpg" },
     { name: "American Psycho", type: "movie", genre: "Thriller", url: "https://lootdest.org/s?Tzxukts0", imageUrl: "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2023/12/27154941/9uGHEgsiUXjCNq8wdq4r49YL8A1-scaled.jpg" },
     { name: "Fight Club", type: "movie", genre: "Action-Crime", url: "https://loot-link.com/s?xtfFu2Eh", imageUrl: "https://media.themoviedb.org/t/p/w440_and_h660_face/a26cQPRhJPX6GbWfQbvZdrrp9j9.jpg" },
+    { name: "Aquaman" , type: "movie", genre: "Action", url: "https://loot-link.com/s?KXJG9t1R", imageUrl: "https://media.themoviedb.org/t/p/w440_and_h660_face/yatMMPBYsAifTnDqNYxUNFLc6d3.jpg" },
+    { name: "Aquaman And The Lost Kingdom" , type: "movie", genre: "Action", url: "https://loot-link.com/s?fZumY3qe", imageUrl: "https://image.tmdb.org/t/p/original/8OGHi3d2hvkD5Ux8oOUYbCDrX76.jpg" },
+    { name: "Joker (2019)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?Jx80bk1d", imageUrl: "https://image.tmdb.org/t/p/original/tfzagTRS9eLEwC3UMmYqiA48D8k.jpg" },
+    { name: "Joker: Folie à Deux" , type: "movie", genre: "Action", url: "https://lootdest.org/s?cWQfeppM", imageUrl: "https://image.tmdb.org/t/p/original/tNrnLiDFRCG7Eq24k4XGHfeMkn1.jpg" },
+    { name: "Suicide Squad (2016)" , type: "movie", genre: "Action", url: "https://loot-link.com/s?QPUNU4LV", imageUrl: "https://image.tmdb.org/t/p/original/Ahrjys0WJ91Da0KhG9gVY6rkRG.jpg" },
+    { name: "The Suicide Squad (2021)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?CI0VvGNX", imageUrl: "https://image.tmdb.org/t/p/original/kb4s0ML0iVZlG6wAKbbs9NAm6X.jpg" },
+    { name: "Wonder Woman" , type: "movie", genre: "Action", url: "https://lootdest.org/s?Wd55HPbb", imageUrl: "https://image.tmdb.org/t/p/original/srOo0wG8ELmmVtVxYfgkGVOPjCV.jpg" },
+    { name: "Wonder Woman 1984" , type: "movie", genre: "Action", url: "https://lootdest.org/s?sIgirMuU", imageUrl: "https://image.tmdb.org/t/p/original/zsLi3dfp7R7uysW1x0LMXF8WcGV.jpg" },
+    { name: "Man Of Steel" , type: "movie", genre: "Action", url: "https://loot-link.com/s?1juWWE7o", imageUrl: "https://image.tmdb.org/t/p/original/fwessDo4IjitWzCueXkmAFX1sSP.jpg" },
+
+    
 ];
+
 
 document.addEventListener('DOMContentLoaded', () => {
     function normalizeString(str) {
