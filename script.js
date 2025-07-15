@@ -763,9 +763,9 @@ window.scenepacks = [
     { name: "Sinners (2025) - Remmick" , type: "movie", genre: "Thriller", url: "https://loot-link.com/s?JClWufek", },
     { name: "Sinners (2025) - Smoke" , type: "movie", genre: "Thriller", url: "https://lootdest.org/s?B1w6ihxR", },
     { name: "Sinners (2025) - Stack" , type: "movie", genre: "Thriller", url: "https://lootdest.org/s?Fc3kKTiB", },
-    { name: "HTTYD (2010)" , type: "movie", genre: "Action-Adventure", url: "https://loot-link.com/s?0NYFNZ3s", imageUrl: "https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_FMjpg_UX1000_.jpg" },
-    { name: "HTTYD 2" , type: "movie", genre: "Action", url: "https://lootdest.org/s?Itx16MZ6", imageUrl: "https://m.media-amazon.com/images/M/MV5BMzMwMTAwODczN15BMl5BanBnXkFtZTgwMDk2NDA4MTE@._V1_.jpg" },
-    { name: "HTTYD The Hidden World" , type: "movie", genre: "Action", url: "https://loot-link.com/s?Nb4jQDCy", imageUrl: "https://wallpapercat.com/w/full/a/f/6/2023405-1400x2100-phone-hd-how-to-train-your-dragon-the-hidden-world-background-photo.jpg" },
+    { name: "How To Train Your Dragon (2010)" , type: "movie", genre: "Action-Adventure", url: "https://loot-link.com/s?0NYFNZ3s", imageUrl: "https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_FMjpg_UX1000_.jpg" },
+    { name: "How To Train Your Dragon 2" , type: "movie", genre: "Action", url: "https://lootdest.org/s?Itx16MZ6", imageUrl: "https://m.media-amazon.com/images/M/MV5BMzMwMTAwODczN15BMl5BanBnXkFtZTgwMDk2NDA4MTE@._V1_.jpg" },
+    { name: "How To Train Your Dragon The Hidden World" , type: "movie", genre: "Action", url: "https://loot-link.com/s?Nb4jQDCy", imageUrl: "https://wallpapercat.com/w/full/a/f/6/2023405-1400x2100-phone-hd-how-to-train-your-dragon-the-hidden-world-background-photo.jpg" },
     { name: "Venom (2018)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?9ftQc5eg", imageUrl: "https://m.media-amazon.com/images/M/MV5BMTU3MTQyNjQwM15BMl5BanBnXkFtZTgwNDgxNDczNTM@._V1_.jpg" },
     { name: "Venom Let There Be Carnage" , type: "movie", genre: "Action", url: "https://loot-link.com/s?SwUyaslt", imageUrl: "https://m.media-amazon.com/images/I/818PUhd1mFL._UF894,1000_QL80_.jpg" },
     { name: "Naruto" , type: "anime", genre: "Action-Fantasy", url: "https://lootdest.org/s?5nlQn0W1", imageUrl: "https://m.media-amazon.com/images/I/81Zj-BWityL.jpg" },
@@ -834,6 +834,27 @@ window.scenepacks = [
     { name: "Wonder Woman" , type: "movie", genre: "Action", url: "https://lootdest.org/s?Wd55HPbb", imageUrl: "https://image.tmdb.org/t/p/original/srOo0wG8ELmmVtVxYfgkGVOPjCV.jpg" },
     { name: "Wonder Woman 1984" , type: "movie", genre: "Action", url: "https://lootdest.org/s?sIgirMuU", imageUrl: "https://image.tmdb.org/t/p/original/zsLi3dfp7R7uysW1x0LMXF8WcGV.jpg" },
     { name: "Man Of Steel" , type: "movie", genre: "Action", url: "https://loot-link.com/s?1juWWE7o", imageUrl: "https://image.tmdb.org/t/p/original/fwessDo4IjitWzCueXkmAFX1sSP.jpg" },
+    { name: "How To Train Your Dragon (2025)" , type: "movie", genre: "Action-Adventrue", url: "https://loot-link.com/s?WvXjzcxL", imageUrl: "https://image.tmdb.org/t/p/original/3lwlJL8aW6Wor9tKvME8VoMnBkn.jpg" },
+    { name: "Astrid", type: "movie", genre: "Action-Adventrue", url: "https://lootdest.org/s?gMvzp0Ze" },
+    { name: "Dragons", type: "movie", genre: "Action-Adventrue", url: "https://loot-link.com/s?ZewcKeIm" },
+    { name: "Fishlegs ", type: "movie", genre: "Action-Adventrue", url: "https://loot-link.com/s?etPv7qeE" },
+    { name: "Gobber ", type: "movie", genre: "Action-Adventrue", url: "https://loot-link.com/s?dQsqlgYK" },
+    { name: "Hiccup ", type: "movie", genre: "Action-Adventrue", url: "https://loot-link.com/s?RGL6Fc93" },
+    { name: "Hiccup & Toothless", type: "movie", genre: "Action-Adventrue", url: "https://loot-link.com/s?Mk3lxWBO" },
+    { name: "Ruffnut ", type: "movie", genre: "Action-Adventrue", url: "https://loot-link.com/s?gHI2c6Tz" },
+    { name: "Snotlout ", type: "movie", genre: "Action-Adventrue", url: "https://lootdest.org/s?0TJ8Dvuc" },
+    { name: "Stoick ", type: "movie", genre: "Action-Adventrue", url: "https://lootdest.org/s?oGJpuReB" },
+    { name: "Toothless", type: "movie", genre: "Action-Adventrue", url: "https://loot-link.com/s?pcEw6RW2" },
+    { name: "Tuffnut", type: "movie", genre: "Action-Adventrue", url: "https://loot-link.com/s?uMYHclVF" },
+    { name: "Ballerina" , type: "movie", genre: "Action", url: "https://lootdest.org/s?ZrnqQdcF", imageUrl: "https://image.tmdb.org/t/p/original/2VUmvqsHb6cEtdfscEA6fqqVzLg.jpg" },
+    { name: "Daniel Pine", type: "movie", genre: "Action", url: "https://lootdest.org/s?h5bkKUH4" },
+    { name: "Eve", type: "movie", genre: "Action", url: "https://loot-link.com/s?QyCpiQoQ" },
+    { name: "John Wick", type: "movie", genre: "Action", url: "https://loot-link.com/s?bVMO5dt5" },
+    { name: "Nogi ", type: "movie", genre: "Action", url: "https://lootdest.org/s?hwYaxq6K" },
+    { name: "Winston ", type: "movie", genre: "Action", url: "https://lootdest.org/s?jhKev0oq" },
+
+
+
 
     
 ];
