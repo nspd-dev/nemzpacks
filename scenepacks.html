@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            background: #000000;
+            background: #1a1a1a;
             margin: 0;
             font-family: 'Inter', Arial, sans-serif;
         }
@@ -21,34 +21,34 @@
             margin: 0 auto;
         }
         .scenepack-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border-radius: 18px;
             overflow: hidden;
-            box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
+            box-shadow: 0 4px 20px 0 rgba(0,0,0,0.25);
             display: flex;
             flex-direction: column;
             align-items: center;
-            transition: transform 0.15s, box-shadow 0.15s;
+            transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
             cursor: pointer;
             position: relative;
             text-decoration: none;
         }
         .scenepack-card:hover {
-            transform: translateY(-6px) scale(1.04);
-            box-shadow: 0 0 32px 0 #fff, 0 0 0 2px #fff;
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 0 40px 0 rgba(255,255,255,0.1), 0 0 0 3px rgba(255,255,255,0.3);
             z-index: 2;
         }
         .scenepack-card img {
             width: 100%;
             height: 320px;
             object-fit: cover;
-            background: #222;
+            background: #333;
             display: block;
         }
         .scenepack-card .card-title {
-            color: #fff;
+            color: #e0e0e0;
             font-size: 1.1rem;
             font-weight: 600;
             margin: 1rem 0 0.5rem 0;
@@ -57,24 +57,36 @@
             word-break: break-word;
         }
         .scenepack-card .card-meta {
-            color: #b3b3d1;
+            color: #aaaaaa;
             font-size: 0.95rem;
             margin-bottom: 1rem;
             text-align: center;
         }
-        .animated-search {
+        .animated-search, .genre-filter-select {
             padding: 0.7rem 1.2rem;
             border-radius: 2rem;
-            border: 1.5px solid #444;
-            background: #18182e;
-            color: #fff;
+            border: 1.5px solid #555;
+            background: #2a2a2a;
+            color: #e0e0e0;
             font-size: 1.08rem;
             outline: none;
+            transition: width 0.4s ease, border-color 0.3s ease, background-color 0.3s ease;
+        }
+        .animated-search {
             min-width: 220px;
-            transition: width 0.4s ease;
+        }
+        .genre-filter-select {
+            min-width: 150px;
+            width: auto;
         }
         .animated-search:focus {
             width: 250px;
+            border-color: #888;
+            background-color: #3a3a3a; 
+        }
+        .genre-filter-select:focus {
+            border-color: #888;
+            background-color: #3a3a3a;
         }
         .sort-dropdown-container {
             position: relative;
@@ -85,16 +97,17 @@
             gap: 0.5rem;
             padding: 0.7rem 1.2rem;
             border-radius: 2rem;
-            border: 1.5px solid #444;
-            background: #18182e;
-            color: #fff;
+            border: 1.5px solid #555;
+            background: #2a2a2a;
+            color: #e0e0e0;
             font-size: 1rem;
             cursor: pointer;
             outline: none;
-            transition: background 0.3s;
+            transition: background 0.3s ease, border-color 0.3s ease;
         }
         .sort-button:hover {
-            background: #2a2a3d;
+            background: #3a3a3a;
+            border-color: #888;
         }
         .sort-caret {
             transition: transform 0.3s;
@@ -104,21 +117,58 @@
             position: absolute;
             top: 100%;
             left: 0;
-            background: #18182e;
+            background: #2a2a2a;
             border-radius: 0.5rem;
             overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             z-index: 10;
         }
         .sort-option {
             padding: 0.7rem 1.2rem;
-            color: #fff;
+            color: #e0e0e0;
             font-size: 0.9rem;
             cursor: pointer;
-            transition: background 0.3s;
+            transition: background 0.3s ease;
         }
         .sort-option:hover {
-            background: #2a2a3d;
+            background: #3a3a3a;
+        }
+        .pagination-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            gap: 1rem;
+            padding: 0 2vw; 
+        }
+        .pagination-button {
+            padding: 0.7rem 1.5rem;
+            border-radius: 2rem;
+            border: 1.5px solid #555;
+            background: #2a2a2a;
+            color: #e0e0e0;
+            font-size: 1rem;
+            cursor: pointer;
+            outline: none;
+            transition: background 0.3s ease, border-color 0.3s ease;
+        }
+        .pagination-button:hover:not(:disabled) {
+            background: #3a3a3a;
+            border-color: #888;
+        }
+        .pagination-button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            background: #1f1f1f;
+            border-color: #444;
+        }
+        .page-info {
+            color: #e0e0e0;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            min-width: 80px;
+            justify-content: center;
         }
         @media (max-width: 600px) {
             .scenepacks-grid {
@@ -128,6 +178,18 @@
             }
             .scenepack-card img {
                 height: 180px;
+            }
+            .pagination-controls {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            .animated-search, .genre-filter-select {
+                min-width: unset;
+                width: 90%;
+            }
+            .animated-search:focus {
+                width: 95%;
             }
         }
     </style>
@@ -167,29 +229,73 @@
             <option value="name-desc">Name (Z-A)</option>
             <option value="type">Type</option>
             <option value="genre">Genre</option>
+            <option value="newest">Newest</option>
         </select>
     </div>
+
+    <div class="pagination-controls" style="margin-bottom: 2rem;">
+        <button id="prevPageBtnTop" class="pagination-button">Previous</button>
+        <span id="pageInfoTop" class="page-info"></span>
+        <button id="nextPageBtnTop" class="pagination-button">Next</button>
+    </div>
+
     <div class="scenepacks-grid" id="allScenepacksGrid"></div>
+
+    <div class="pagination-controls">
+        <button id="prevPageBtnBottom" class="pagination-button">Previous</button>
+        <span id="pageInfoBottom" class="page-info"></span>
+        <button id="nextPageBtnBottom" class="pagination-button">Next</button>
+    </div>
+
     <script src="/script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             let packs = window.scenepacks || [];
-            if (!packs.length) return;
+            
+            packs = packs.filter(pack => pack.imageUrl && pack.imageUrl.trim() !== '');
+
+            packs.forEach((pack, index) => {
+                const date = new Date();
+                date.setDate(date.getDate() - index);
+                pack.releaseDate = date.toISOString().split('T')[0]; 
+            });
+
+
+            if (!packs.length) {
+                document.getElementById('allScenepacksGrid').innerHTML = '<p style="color:#e0e0e0; text-align:center;">No scenepacks with images found.</p>';
+                document.querySelectorAll('.pagination-controls').forEach(control => control.style.display = 'none');
+                return;
+            }
 
             const grid = document.getElementById('allScenepacksGrid');
             const sortBySelect = document.getElementById('sortBySelect');
             const searchInput = document.getElementById('searchInput');
+            
+            const prevPageBtnTop = document.getElementById('prevPageBtnTop');
+            const nextPageBtnTop = document.getElementById('nextPageBtnTop');
+            const pageInfoTop = document.getElementById('pageInfoTop');
+
+            const prevPageBtnBottom = document.getElementById('prevPageBtnBottom');
+            const nextPageBtnBottom = document.getElementById('nextPageBtnBottom');
+            const pageInfoBottom = document.getElementById('pageInfoBottom');
+
+            const scenepacksPerPage = 30; 
+            let currentPage = 1;
+            let currentFilteredAndSortedPacks = [];
 
             function getImage(pack) {
-                if (pack.imageUrl) return pack.imageUrl;
-                return null;
+                return pack.imageUrl;
             }
 
             function renderGrid(sortedPacks) {
                 grid.innerHTML = '';
-                sortedPacks.forEach((pack, i) => {
+                const startIndex = (currentPage - 1) * scenepacksPerPage;
+                const endIndex = startIndex + scenepacksPerPage;
+                const packsToDisplay = sortedPacks.slice(startIndex, endIndex);
+
+                packsToDisplay.forEach((pack, i) => {
                     const imageUrl = getImage(pack);
-                    if (!imageUrl) return;
+                    const finalImageUrl = imageUrl; 
 
                     const card = document.createElement('a');
                     card.className = 'scenepack-card scenepack-fadein';
@@ -198,8 +304,12 @@
                     card.rel = "noopener noreferrer";
 
                     const img = document.createElement('img');
-                    img.src = imageUrl;
+                    img.src = finalImageUrl;
                     img.alt = pack.name;
+                    img.onerror = function() {
+                        this.onerror=null; 
+                        this.src='https://placehold.co/320x320/222222/FFFFFF?text=Error+Loading+Image';
+                    };
 
                     const title = document.createElement('div');
                     title.className = 'card-title';
@@ -217,10 +327,11 @@
 
                     grid.appendChild(card);
                 });
+                updatePaginationControls(sortedPacks.length);
             }
 
-            function sortPacks(packs, sortBy) {
-                let sorted = [...packs];
+            function sortPacks(packsArray, sortBy) {
+                let sorted = [...packsArray];
                 if (sortBy === 'name-asc') {
                     sorted.sort((a, b) => a.name.localeCompare(b.name));
                 } else if (sortBy === 'name-desc') {
@@ -229,6 +340,12 @@
                     sorted.sort((a, b) => (a.type || '').localeCompare(b.type || '') || a.name.localeCompare(b.name));
                 } else if (sortBy === 'genre') {
                     sorted.sort((a, b) => (a.genre || '').localeCompare(b.genre || '') || a.name.localeCompare(b.name));
+                } else if (sortBy === 'newest') {
+                    sorted.sort((a, b) => {
+                        const dateA = new Date(a.releaseDate || '1970-01-01');
+                        const dateB = new Date(b.releaseDate || '1970-01-01');
+                        return dateB.getTime() - dateA.getTime();
+                    });
                 }
                 return sorted;
             }
@@ -240,10 +357,10 @@
                     .replace(/[^a-z0-9]/g, '');
             }
 
-            function filterPacks(packs, query) {
-                if (!query) return packs;
+            function filterPacks(packsArray, query) {
+                if (!query) return packsArray;
                 const normQuery = normalize(query);
-                return packs.filter(pack => {
+                return packsArray.filter(pack => {
                     if (normalize(pack.name).includes(normQuery)) return true;
                     if (pack.type && normalize(pack.type).includes(normQuery)) return true;
                     if (pack.genre && normalize(pack.genre).includes(normQuery)) return true;
@@ -251,20 +368,89 @@
                 });
             }
 
+            function updatePaginationControls(totalPacks) {
+                const totalPages = Math.ceil(totalPacks / scenepacksPerPage);
+                const pageInfoText = `Page ${currentPage} of ${totalPages || 1}`; 
+                
+                pageInfoTop.textContent = pageInfoText;
+                pageInfoBottom.textContent = pageInfoText;
+
+                const isPrevDisabled = currentPage === 1;
+                const isNextDisabled = currentPage >= totalPages || totalPacks === 0;
+
+                prevPageBtnTop.disabled = isPrevDisabled;
+                prevPageBtnBottom.disabled = isPrevDisabled;
+                nextPageBtnTop.disabled = isNextDisabled;
+                nextPageBtnBottom.disabled = isNextDisabled;
+
+                if (totalPages <= 1) {
+                    document.querySelectorAll('.pagination-controls').forEach(control => control.style.display = 'none');
+                } else {
+                    document.querySelectorAll('.pagination-controls').forEach(control => control.style.display = 'flex');
+                }
+            }
+
             function render(initialSort) {
                 const query = searchInput.value;
-                const sortBy = initialSort || 'name-asc';
+                const sortBy = initialSort || sortBySelect.value; 
+                
                 const filtered = filterPacks(packs, query);
-                renderGrid(sortPacks(filtered, sortBy));
+                currentFilteredAndSortedPacks = sortPacks(filtered, sortBy);
+                
+                const totalPages = Math.ceil(currentFilteredAndSortedPacks.length / scenepacksPerPage);
+                if (currentPage > totalPages && totalPages > 0) {
+                    currentPage = totalPages;
+                } else if (currentPage === 0 && totalPages > 0) {
+                    currentPage = 1; 
+                } else if (totalPages === 0) {
+                    currentPage = 0; 
+                } else if (currentFilteredAndSortedPacks.length > 0 && currentPage === 0) {
+                    currentPage = 1; 
+                }
+
+                renderGrid(currentFilteredAndSortedPacks);
             }
 
             render();
 
-            searchInput.addEventListener('input', render);
+            searchInput.addEventListener('input', () => {
+                currentPage = 1; 
+                render();
+            });
 
-            sortBySelect.addEventListener('change', (e) => {
-                const value = e.target.value;
-                render(value);
+            sortBySelect.addEventListener('change', () => {
+                currentPage = 1; 
+                render();
+            });
+
+            prevPageBtnTop.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderGrid(currentFilteredAndSortedPacks);
+                }
+            });
+
+            nextPageBtnTop.addEventListener('click', () => {
+                const totalPages = Math.ceil(currentFilteredAndSortedPacks.length / scenepacksPerPage);
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderGrid(currentFilteredAndSortedPacks);
+                }
+            });
+
+            prevPageBtnBottom.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderGrid(currentFilteredAndSortedPacks);
+                }
+            });
+
+            nextPageBtnBottom.addEventListener('click', () => {
+                const totalPages = Math.ceil(currentFilteredAndSortedPacks.length / scenepacksPerPage);
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderGrid(currentFilteredAndSortedPacks);
+                }
             });
         });
     </script>
