@@ -471,6 +471,7 @@ window.scenepacks = [
     { name: "Valorant", type: "game", genre: "FPS", url: "https://lootdest.org/s?DatUztpP", imageUrl: "https://m.media-amazon.com/images/I/71LTpSLz57L.jpg" },
     { name: "Star Wars: Episode I – The Phantom Menace", type: "movie", genre: "Sci-Fi", url: "https://loot-link.com/s?Amuc0c9a", imageUrl: "https://m.media-amazon.com/images/M/MV5BODVhNGIxOGItYWNlMi00YTA0LWI3NTctZmQxZGUwZDEyZWI4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
     { name: "Star Wars: Episode II - Attack of the Clones", type: "movie", genre: "Sci-Fi", url: "https://lootdest.org/s?u6M0wW8g", imageUrl: "https://oyster.ignimgs.com/mediawiki/apis.ign.com/star-wars-episode-7/2/21/SW_II.jpeg?width=640" },
+    { name: "Star Wars: Episode II - Attack of the Clones", type: "movie", genre: "Sci-Fi", url: "https://lootdest.org/s?u6M0wW8g", imageUrl: "https://oyster.ignimgs.com/mediawiki/apis.ign.com/star-wars-episode-7/2/21/SW_II.jpeg?width=640" },
     { name: "Star Wars: Episode IV – A New Hope", type: "movie", genre: "Sci-Fi", url: "https://lootdest.org/s?s56ItItW", imageUrl: "https://m.media-amazon.com/images/I/81CIXJxQ3TL.jpg" },
     { name: "Star Wars: Episode V - The Empire Strikes Back", type: "movie", genre: "Sci-Fi", url: "https://loot-link.com/s?2bboCcrQ", imageUrl: "https://m.media-amazon.com/images/M/MV5BMTkxNGFlNDktZmJkNC00MDdhLTg0MTEtZjZiYWI3MGE5NWIwXkEyXkFqcGc@._V1_.jpg" },
     { name: "Star Wars: Episode VI﹕Return of the Jedi", type: "movie", genre: "Sci-Fi", url: "https://lootdest.org/s?4Ea223n4", imageUrl: "https://m.media-amazon.com/images/M/MV5BNWEwOTI0MmUtMGNmNy00ODViLTlkZDQtZTg1YmQ3MDgyNTUzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
@@ -556,7 +557,7 @@ window.scenepacks = [
     { name: "Batman Under the Red Hood (2010) - Ras", type: "movie", genre: "Animation", url: "https://lootdest.org/s?kkHlEBe5" },
     { name: "Batman Under the Red Hood (2010) - Red Hood", type: "movie", genre: "Animation", url: "https://loot-link.com/s?Zdvf9Brj" },
     { name: "Batman Under the Red Hood (2010) - Robin", type: "movie", genre: "Animation", url: "https://loot-link.com/s?NHu9mycS" },
-    { name: "The Batman (2022)", type: "movie", genre: "Action", url: "", imageUrl: "https://i.redd.it/ct4v5x4cmsz71.jpg" },
+    { name: "The Batman (2022)", type: "movie", genre: "Action", url: "https://loot-link.com/s?aXu0ggvt", imageUrl: "https://i.redd.it/ct4v5x4cmsz71.jpg" },
     { name: "The Batman (2022) - The Batman", type: "movie", genre: "Action", url: "https://lootdest.org/s?qxCPAwpr", },
     { name: "The Batman (2022) - Penguin ", type: "movie", genre: "Action", url: "https://loot-link.com/s?zDhvjOlH", },
     { name: "The Batman (2022) - Selina Kyle ", type: "movie", genre: "Action", url: "https://loot-link.com/s?DX2HYAb5", },
@@ -851,6 +852,7 @@ window.scenepacks = [
     { name: "John Wick", type: "movie", genre: "Action", url: "https://loot-link.com/s?bVMO5dt5" },
     { name: "Nogi ", type: "movie", genre: "Action", url: "https://lootdest.org/s?hwYaxq6K" },
     { name: "Winston ", type: "movie", genre: "Action", url: "https://lootdest.org/s?jhKev0oq" },
+    { name: "Jujutsu Kaisen", type: "anime", genre: "Adventure-Fantasy", url: "https://lootdest.org/s?2j1YzqK3", imageUrl: "https://image.tmdb.org/t/p/original/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg" },
 
 
 
