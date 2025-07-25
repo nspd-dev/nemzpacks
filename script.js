@@ -854,7 +854,7 @@ window.scenepacks = [
     { name: "Nogi ", type: "movie", genre: "Action", url: "https://lootdest.org/s?hwYaxq6K" },
     { name: "Winston ", type: "movie", genre: "Action", url: "https://lootdest.org/s?jhKev0oq" },
     { name: "Jujutsu Kaisen", type: "anime", genre: "Adventure-Fantasy", url: "https://lootdest.org/s?2j1YzqK3", imageUrl: "https://image.tmdb.org/t/p/original/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg" },
-    { name: "Avatar 2009 - Aesthetic" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
+    { name: "Avatar 2009 - Aesthetics" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
     { name: "Avatar 2009 - Eytukan" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
     { name: "Avatar 2009 - Grace" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
     { name: "Avatar 2009 - Jake Sully (avatar)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
