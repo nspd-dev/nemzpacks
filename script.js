@@ -557,7 +557,7 @@ window.scenepacks = [
     { name: "Batman Under the Red Hood (2010) - Ras", type: "movie", genre: "Animation", url: "https://lootdest.org/s?kkHlEBe5" },
     { name: "Batman Under the Red Hood (2010) - Red Hood", type: "movie", genre: "Animation", url: "https://loot-link.com/s?Zdvf9Brj" },
     { name: "Batman Under the Red Hood (2010) - Robin", type: "movie", genre: "Animation", url: "https://loot-link.com/s?NHu9mycS" },
-    { name: "The Batman (2022)", type: "movie", genre: "Action", url: "https://loot-link.com/s?aXu0ggvt", imageUrl: "https://i.redd.it/ct4v5x4cmsz71.jpg" },
+    { name: "The Batman (2022)", type: "movie", genre: "Action", url: "", imageUrl: "https://i.redd.it/ct4v5x4cmsz71.jpg" },
     { name: "The Batman (2022) - The Batman", type: "movie", genre: "Action", url: "https://lootdest.org/s?qxCPAwpr", },
     { name: "The Batman (2022) - Penguin ", type: "movie", genre: "Action", url: "https://loot-link.com/s?zDhvjOlH", },
     { name: "The Batman (2022) - Selina Kyle ", type: "movie", genre: "Action", url: "https://loot-link.com/s?DX2HYAb5", },
@@ -763,9 +763,9 @@ window.scenepacks = [
     { name: "Sinners (2025) - Remmick" , type: "movie", genre: "Thriller", url: "https://loot-link.com/s?JClWufek", },
     { name: "Sinners (2025) - Smoke" , type: "movie", genre: "Thriller", url: "https://lootdest.org/s?B1w6ihxR", },
     { name: "Sinners (2025) - Stack" , type: "movie", genre: "Thriller", url: "https://lootdest.org/s?Fc3kKTiB", },
-    { name: "How To Train Your Dragon (2010)" , type: "movie", genre: "Action-Adventure", url: "https://loot-link.com/s?0NYFNZ3s", imageUrl: "https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_FMjpg_UX1000_.jpg" },
-    { name: "How To Train Your Dragon 2" , type: "movie", genre: "Action-Adventure", url: "https://lootdest.org/s?Itx16MZ6", imageUrl: "https://m.media-amazon.com/images/M/MV5BMzMwMTAwODczN15BMl5BanBnXkFtZTgwMDk2NDA4MTE@._V1_.jpg" },
-    { name: "How To Train Your Dragon The Hidden World" , type: "movie", genre: "Action-Adventure", url: "https://loot-link.com/s?Nb4jQDCy", imageUrl: "https://wallpapercat.com/w/full/a/f/6/2023405-1400x2100-phone-hd-how-to-train-your-dragon-the-hidden-world-background-photo.jpg" },
+    { name: "HTTYD (2010)" , type: "movie", genre: "Action-Adventure", url: "https://loot-link.com/s?0NYFNZ3s", imageUrl: "https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_FMjpg_UX1000_.jpg" },
+    { name: "HTTYD 2" , type: "movie", genre: "Action", url: "https://lootdest.org/s?Itx16MZ6", imageUrl: "https://m.media-amazon.com/images/M/MV5BMzMwMTAwODczN15BMl5BanBnXkFtZTgwMDk2NDA4MTE@._V1_.jpg" },
+    { name: "HTTYD The Hidden World" , type: "movie", genre: "Action", url: "https://loot-link.com/s?Nb4jQDCy", imageUrl: "https://wallpapercat.com/w/full/a/f/6/2023405-1400x2100-phone-hd-how-to-train-your-dragon-the-hidden-world-background-photo.jpg" },
     { name: "Venom (2018)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?9ftQc5eg", imageUrl: "https://m.media-amazon.com/images/M/MV5BMTU3MTQyNjQwM15BMl5BanBnXkFtZTgwNDgxNDczNTM@._V1_.jpg" },
     { name: "Venom Let There Be Carnage" , type: "movie", genre: "Action", url: "https://loot-link.com/s?SwUyaslt", imageUrl: "https://m.media-amazon.com/images/I/818PUhd1mFL._UF894,1000_QL80_.jpg" },
     { name: "Naruto" , type: "anime", genre: "Action-Fantasy", url: "https://lootdest.org/s?5nlQn0W1", imageUrl: "https://m.media-amazon.com/images/I/81Zj-BWityL.jpg" },
@@ -834,6 +834,7 @@ window.scenepacks = [
     { name: "Wonder Woman" , type: "movie", genre: "Action", url: "https://lootdest.org/s?Wd55HPbb", imageUrl: "https://image.tmdb.org/t/p/original/srOo0wG8ELmmVtVxYfgkGVOPjCV.jpg" },
     { name: "Wonder Woman 1984" , type: "movie", genre: "Action", url: "https://lootdest.org/s?sIgirMuU", imageUrl: "https://image.tmdb.org/t/p/original/zsLi3dfp7R7uysW1x0LMXF8WcGV.jpg" },
     { name: "Man Of Steel" , type: "movie", genre: "Action", url: "https://loot-link.com/s?1juWWE7o", imageUrl: "https://image.tmdb.org/t/p/original/fwessDo4IjitWzCueXkmAFX1sSP.jpg" },
+    { name: "Avatar 2009" , type: "movie", genre: "Action", url: "https://lootdest.org/s?jena2svb", imageUrl: "https://image.tmdb.org/t/p/original/kyeqWdyUXW608qlYkRqosgbbJyK.jpg" },
     { name: "How To Train Your Dragon (2025)" , type: "movie", genre: "Action-Adventure", url: "https://loot-link.com/s?WvXjzcxL", imageUrl: "https://image.tmdb.org/t/p/original/3lwlJL8aW6Wor9tKvME8VoMnBkn.jpg" },
     { name: "Astrid", type: "movie", genre: "Action-Adventure", url: "https://lootdest.org/s?gMvzp0Ze" },
     { name: "Dragons", type: "movie", genre: "Action-Adventure", url: "https://loot-link.com/s?ZewcKeIm" },
@@ -853,11 +854,16 @@ window.scenepacks = [
     { name: "Nogi ", type: "movie", genre: "Action", url: "https://lootdest.org/s?hwYaxq6K" },
     { name: "Winston ", type: "movie", genre: "Action", url: "https://lootdest.org/s?jhKev0oq" },
     { name: "Jujutsu Kaisen", type: "anime", genre: "Adventure-Fantasy", url: "https://lootdest.org/s?2j1YzqK3", imageUrl: "https://image.tmdb.org/t/p/original/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg" },
-
-
-
-
-    
+    { name: "Avatar 2009 - Aesthetic" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
+    { name: "Avatar 2009 - Eytukan" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
+    { name: "Avatar 2009 - Grace" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
+    { name: "Avatar 2009 - Jake Sully (avatar)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
+    { name: "Avatar 2009 - Jake Sully (human)" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
+    { name: "Avatar 2009 - Mo'at" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
+    { name: "Avatar 2009 - Neytiri" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
+    { name: "Avatar 2009 - Norm" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
+    { name: "Avatar 2009 - Trudy Chacon" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
+    { name: "Avatar 2009 - Tsu'tey" , type: "movie", genre: "Action", url: "https://lootdest.org/s?8fhUzWhY" },
 ];
 
 
