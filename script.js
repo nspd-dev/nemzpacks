@@ -869,6 +869,7 @@ window.scenepacks = [
     { name: "Descendants (2015)", type: "movie", genre: "Musical-Action", url: "https://lootdest.org/s?L4HU72nX", imageUrl: "https://image.tmdb.org/t/p/original/65DkgHPSLVjgr6IYkpY9Aqqqid5.jpg" },
     { name: "Descendants 2 (2017)", type: "movie", genre: "Musical-Action", url: "https://loot-link.com/s?Z6y0M1Vh", imageUrl: "https://m.media-amazon.com/images/M/MV5BMjI5MTA4MTk2N15BMl5BanBnXkFtZTgwNjY2NDUwMjI@._V1_.jpg" },
     { name: "Descendants 3 (2019)", type: "movie", genre: "Musical-Action", url: "https://lootdest.org/s?yZwQlY0l", imageUrl: "https://image.tmdb.org/t/p/original/7IRy0iHdaS0JI3ng4ZYlk5gLSFn.jpg" },
+    { name: "The Fantastic Four: First Steps HD CAM", type: "movie", genre: "Action", url: "https://loot-link.com/s?CaBLmepj", imageUrl: "https://image.tmdb.org/t/p/original/abqOz6EL3yXyOOafCPZxjL1M5bQ.jpg" },
 ];
 
 
