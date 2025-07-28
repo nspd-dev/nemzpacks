@@ -870,6 +870,19 @@ window.scenepacks = [
     { name: "Descendants 2 (2017)", type: "movie", genre: "Musical-Action", url: "https://loot-link.com/s?Z6y0M1Vh", imageUrl: "https://m.media-amazon.com/images/M/MV5BMjI5MTA4MTk2N15BMl5BanBnXkFtZTgwNjY2NDUwMjI@._V1_.jpg" },
     { name: "Descendants 3 (2019)", type: "movie", genre: "Musical-Action", url: "https://lootdest.org/s?yZwQlY0l", imageUrl: "https://image.tmdb.org/t/p/original/7IRy0iHdaS0JI3ng4ZYlk5gLSFn.jpg" },
     { name: "The Fantastic Four: First Steps HD CAM", type: "movie", genre: "Action", url: "https://loot-link.com/s?CaBLmepj", imageUrl: "https://image.tmdb.org/t/p/original/abqOz6EL3yXyOOafCPZxjL1M5bQ.jpg" },
+    { name: "Teenage Mutant Ninja Turtles (2014)", type: "movie", genre: "Action", url: "https://lootdest.org/s?UiKSzuJn", imageUrl: "https://image.tmdb.org/t/p/original/azL2ThbJMIkts3ZMt3j1YgBUeDB.jpg" },
+    { name: "Teenage Mutant Ninja Turtles Out The Shadows", type: "movie", genre: "Action", url: "https://lootdest.org/s?CCBms6xa", imageUrl: "https://image.tmdb.org/t/p/original/euVaCiCWz3AALcQXHT6aUqdGUo6.jpg" },
+    { name: "Big Hero 6", type: "movie", genre: "Animation", url: "https://lootdest.org/s?2qh4vCZc", imageUrl: "https://image.tmdb.org/t/p/original/2mxS4wUimwlLmI1xp6QW6NSU361.jpg" },
+    { name: "Zootopia", type: "movie", genre: "Animation", url: "https://lootdest.org/s?p3pPjsIe", imageUrl: "https://image.tmdb.org/t/p/original/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg" },
+    { name: "The Bad Guys", type: "movie", genre: "Animation", url: "https://lootdest.org/s?z76yGaCE", imageUrl: "https://image.tmdb.org/t/p/original/6fcFmdVLCCbf1gFt8HlC6BRj8pt.jpg" },
+    { name: "DC Showcase: Catwoman 4K Upscaled", type: "movie", genre: "Animation", url: "https://loot-link.com/s?VSGxf8zV", imageUrl: "https://m.media-amazon.com/images/M/MV5BNmQzODczNGEtOTEwYi00OGQzLTkxMzktMDcwZTQ2ZDZlZmNiXkEyXkFqcGc@._V1_.jpg" },
+    { name: "Fantastic Four: (2005)", type: "movie", genre: "Action", url: "https://loot-link.com/s?U8sQR2Zp", imageUrl: "https://image.tmdb.org/t/p/original/xQMf4jM77CU4q2RniQx2Rjeh96C.jpg" },
+    { name: "Fantastic Four: Rise of the Silver Surfer", type: "movie", genre: "Action", url: "https://lootdest.org/s?JihY1Lif", imageUrl: "https://image.tmdb.org/t/p/original/9wRfzTcMyyzkQxVDqBHv8RwuZOv.jpg" },
+
+    
+
+
+    
 ];
 
 
