@@ -878,11 +878,8 @@ window.scenepacks = [
     { name: "DC Showcase: Catwoman 4K Upscaled", type: "movie", genre: "Animation", url: "https://loot-link.com/s?VSGxf8zV", imageUrl: "https://m.media-amazon.com/images/M/MV5BNmQzODczNGEtOTEwYi00OGQzLTkxMzktMDcwZTQ2ZDZlZmNiXkEyXkFqcGc@._V1_.jpg" },
     { name: "Fantastic Four: (2005)", type: "movie", genre: "Action", url: "https://loot-link.com/s?U8sQR2Zp", imageUrl: "https://image.tmdb.org/t/p/original/xQMf4jM77CU4q2RniQx2Rjeh96C.jpg" },
     { name: "Fantastic Four: Rise of the Silver Surfer", type: "movie", genre: "Action", url: "https://lootdest.org/s?JihY1Lif", imageUrl: "https://image.tmdb.org/t/p/original/9wRfzTcMyyzkQxVDqBHv8RwuZOv.jpg" },
-
-    
-
-
-    
+    { name: "Avatar Fire and Ashes 2025 (4k)", type: "movie", genre: "Trailer", url: "https://loot-link.com/s?OAY3gKtD", imageUrl: "https://image.tmdb.org/t/p/original/cf7hE1ifY4UNbS25tGnaTyyDrI2.jpg" },
+    { name: "Avatar Fire and Ashes 2025 (4K BG AUDIO REDUCED)", type: "movie", genre: "Trailer", url: "https://lootdest.org/s?NBdQSPI5" },
 ];
 
 
